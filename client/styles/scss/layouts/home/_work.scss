@@ -1,0 +1,91 @@
+.work {
+    padding: 190px 0 110px;
+    @include breakpoint(extra-small) {
+        padding: 50px 0 60px;
+    }
+
+    .solutions {
+        @include breakpoint(extra-small) {
+            margin-top: 50px;
+        }
+
+        h2 {
+            margin: 0;
+            font-family: "Roboto";
+            font-weight: 500;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        p {
+            margin-top: 30px;
+            margin-bottom: 0;
+            padding: 0 48px;
+            font-family: "Roboto";
+            font-weight: 100;
+            font-size: 14px;
+            line-height: 25px;
+            text-align: left;
+            @include breakpoint(small) {
+                padding: 0 30px;
+                text-align: justify;
+            }
+            @include breakpoint(extra-small) {
+                margin-top: 15px;
+                padding: 0;
+                text-align: justify;
+            }
+        }
+
+        .slide-examples {
+            font-size: 0;
+            //text-align: center;
+
+            li {
+                float: none;
+                display: inline-block;
+                margin: 35px 0 0 15px;
+                @include breakpoint(small) {
+                    margin-left: 10px;
+                }
+                @include breakpoint(extra-small) {
+                    margin: 20px 0 0 10px;
+                }
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                a{
+                    display: block;
+
+                    img {
+                        width: 146px;
+                        border: 2px solid transparent;
+                        @include breakpoint(medium) {
+                            width: 120px;
+                        }
+                        @include breakpoint(small) {
+                            width: 100px;
+                        }
+                        @include breakpoint(extra-small) {
+                            width: 85px;
+                        }
+
+                        &:hover {
+                            border-color: #ffffff;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .button-style {
+            margin: 50px auto 0;
+            @include breakpoint(extra-small) {
+                margin: 20px auto 0;
+            }
+        }
+    }
+}

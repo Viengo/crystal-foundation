@@ -1,0 +1,23 @@
+.about {
+    padding: 135px 35px 140px;
+    text-align: center;
+
+    h3 {
+        margin: 0;
+        font-family: "Tunga";
+        font-size: 48px;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin: 0;
+        font-family: "Roboto";
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 30px;
+
+        &:first-of-type {
+            margin-top: 30px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "crystal foundation",
+  "version": "0.0.1",
+  "authors": [
+    "Viengo <viengooleg@gmail.com>"
+  ],
+  "description": "UI Crystal project",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "parallax.js": "https://github.com/pixelcog/parallax.js.git#~1.3.2",
+    "foundation": "zurb/bower-foundation#~5.5.2"
+  }
+}

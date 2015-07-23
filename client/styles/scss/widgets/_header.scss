@@ -1,0 +1,66 @@
+header {
+    padding: 175px 0 720px;
+
+    h2, h3 {
+        margin: 0;
+        font-family: "Tunga";
+        font-size: 48px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fefefe;
+    }
+
+    h2 {
+        margin-top: 95px;
+        font-size: 82px;
+        line-height: 78px;
+
+
+
+        span{
+            position: relative;
+            padding-right: 10px;
+            font-size: 140px;
+            line-height: 78px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 19px;
+                left: 22px;
+                width: 34px;
+                height: 38px;
+                background-image: url("../../images/logo.png");
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    nav {
+        .nav-style {
+            padding-left: 0;
+
+            li {
+                display: block;
+
+                a{
+                    display: block;
+                    font-family: "Tunga";
+                    font-size: 18px;
+                    line-height: 46px;
+                    text-transform: uppercase;
+                    color: #4a7999;
+                }
+            }
+
+        }
+    }
+
+    &.scroll-open {
+        padding: 0;
+    }
+}
