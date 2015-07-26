@@ -55,6 +55,8 @@
                     img {
                         width: 146px;
                         border: 2px solid transparent;
+                        @include transition-property(border-color);
+                        @include transition-duration(200ms);
 
                         &:hover {
                             border-color: #ffffff;

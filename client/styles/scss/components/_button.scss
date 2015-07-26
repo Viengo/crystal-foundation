@@ -47,7 +47,14 @@
     }
 
     &.orange {
-        background-color: #eb974e;
+        background-color: #de6c40;
         color: #ffffff;
+
+        &:hover{
+            background-color: #f17645;
+        }
+        &:active {
+            background-color: #d76437;
+        }
     }
 }

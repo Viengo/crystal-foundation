@@ -1,6 +1,9 @@
 .about {
     padding: 135px 35px 140px;
     text-align: center;
+    @media #{$small-only}{
+        padding: 45px 15px 85px;
+    }
 
     h3 {
         margin: 0;
