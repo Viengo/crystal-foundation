@@ -28,64 +28,16 @@
         }
     }
 
-    ul {
-        width: 320px;
+    .contact-box {
+        width: 271px;
         margin: 0 auto;
-        text-align: center;
 
         li {
-            display: inline-block;
-            text-align: center;
-            @media #{$small-only}{
-                display: block;
-                margin: 20px auto 0;
-            }
-            a {
-                position: relative;
-                display: inline-block;
-                color: #ffffff;
-                @include transition-property(color);
-                @include transition-duration(200ms);
+            float: left;
+            margin-left: 35px;
 
-                &:hover {
-                    color: #9fe1ff;
-                }
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    left: -34px;
-                    width: 22px;
-                    height: 22px;
-                }
-            }
-            &:nth-child(1) {
-                a {
-                    &::before {
-                        @include contacts-sprite(mail);
-                    }
-                    &:hover {
-                        &::before {
-                            @include contacts-sprite(mail_h);
-                        }
-                    }
-                }
-            }
             &:nth-child(2) {
-                @media #{$medium-up}{
-                    margin-left: 80px;
-                }
-
-                a {
-                    &::before {
-                        @include contacts-sprite(skype);
-                    }
-                    &:hover {
-                        &::before {
-                            @include contacts-sprite(skype_h);
-                        }
-                    }
-                }
+                margin-left: 78px;
             }
         }
     }
@@ -107,34 +59,34 @@
             }
         }
 
-            input {
-                width: 225px;
-                margin: 17px 0 0;
-                border-top: none;
-                border-right: none;
-                border-left: none;
-                border-bottom: 1px solid #ffffff;
-                outline: none;
-                background: transparent;
-                text-align: center;
-                @include box-shadow(none);
-            }
+        input {
+            width: 225px;
+            margin: 17px 0 0;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid #ffffff;
+            outline: none;
+            background: transparent;
+            text-align: center;
+            @include box-shadow(none);
+        }
 
-            label {
-                margin-top: 5px;
-                font-family: "Roboto";
-                text-transform: uppercase;
-            }
+        label {
+            margin-top: 5px;
+            font-family: "Roboto";
+            text-transform: uppercase;
+        }
 
-            small{
-                text-transform: uppercase;
-            }
+        small {
+            text-transform: uppercase;
+        }
 
         .button-style {
             margin: 40px 0 0 0;
             padding: 0;
             @media #{$medium-up}{
-            float: right;
+                float: right;
             }
             @media #{$small-only}{
                 margin-top: 30px;

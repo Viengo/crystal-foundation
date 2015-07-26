@@ -1,0 +1,53 @@
+.contact-box {
+    width: 271px;
+
+    li {
+
+        a {
+            position: relative;
+            display: inline-block;
+            font-family: "Roboto";
+            font-weight: 300;
+            font-size: 14px;
+            color: #ffffff;
+            @include transition-property(color);
+            @include transition-duration(200ms);
+
+            &:hover {
+                color: #9fe1ff;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -34px;
+                width: 22px;
+                height: 22px;
+            }
+        }
+        &:nth-child(1) {
+            a {
+                &::before {
+                    @include contacts-sprite(mail);
+                }
+                &:hover {
+                    &::before {
+                        @include contacts-sprite(mail_h);
+                    }
+                }
+            }
+        }
+        &:nth-child(2) {
+            a {
+                &::before {
+                    @include contacts-sprite(skype);
+                }
+                &:hover {
+                    &::before {
+                        @include contacts-sprite(skype_h);
+                    }
+                }
+            }
+        }
+    }
+}

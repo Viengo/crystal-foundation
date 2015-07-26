@@ -4975,7 +4975,7 @@ th.hide-for-touch {
     display: none !important;
   }
 }
-.contacts-sprite, .home .contact ul li:nth-child(1) a::before, .home .contact ul li:nth-child(1) a:hover::before, .home .contact ul li:nth-child(2) a::before, .home .contact ul li:nth-child(2) a:hover::before {
+.contacts-sprite, .contact-box li:nth-child(1) a::before, .contact-box li:nth-child(1) a:hover::before, .contact-box li:nth-child(2) a::before, .contact-box li:nth-child(2) a:hover::before {
   background-image: url('../../images/contacts-sa3bb67a8c7.png');
   background-repeat: no-repeat;
 }
@@ -5175,6 +5175,48 @@ header .scroll-open ul li a {
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+}
+
+.contact-box {
+  width: 271px;
+}
+.contact-box li a {
+  position: relative;
+  display: inline-block;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 14px;
+  color: #ffffff;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+}
+.contact-box li a:hover {
+  color: #9fe1ff;
+}
+.contact-box li a::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  width: 22px;
+  height: 22px;
+}
+.contact-box li:nth-child(1) a::before {
+  background-position: 0 0;
+}
+.contact-box li:nth-child(1) a:hover::before {
+  background-position: 0 -22px;
+}
+.contact-box li:nth-child(2) a::before {
+  background-position: 0 -44px;
+}
+.contact-box li:nth-child(2) a:hover::before {
+  background-position: 0 -66px;
 }
 
 .home .services {
@@ -5406,60 +5448,16 @@ header .scroll-open ul li a {
 .home .contact p:first-child {
   margin: 45px 0 0;
 }
-.home .contact ul {
-  width: 320px;
+.home .contact .contact-box {
+  width: 271px;
   margin: 0 auto;
-  text-align: center;
 }
-.home .contact ul li {
-  display: inline-block;
-  text-align: center;
+.home .contact .contact-box li {
+  float: left;
+  margin-left: 35px;
 }
-@media only screen and (max-width: 40em) {
-  .home .contact ul li {
-    display: block;
-    margin: 20px auto 0;
-  }
-}
-.home .contact ul li a {
-  position: relative;
-  display: inline-block;
-  color: #ffffff;
-  -moz-transition-property: color;
-  -o-transition-property: color;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -moz-transition-duration: 200ms;
-  -o-transition-duration: 200ms;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-}
-.home .contact ul li a:hover {
-  color: #9fe1ff;
-}
-.home .contact ul li a::before {
-  content: "";
-  position: absolute;
-  left: -34px;
-  width: 22px;
-  height: 22px;
-}
-.home .contact ul li:nth-child(1) a::before {
-  background-position: 0 0;
-}
-.home .contact ul li:nth-child(1) a:hover::before {
-  background-position: 0 -22px;
-}
-@media only screen and (min-width: 40.0625em) {
-  .home .contact ul li:nth-child(2) {
-    margin-left: 80px;
-  }
-}
-.home .contact ul li:nth-child(2) a::before {
-  background-position: 0 -44px;
-}
-.home .contact ul li:nth-child(2) a:hover::before {
-  background-position: 0 -66px;
+.home .contact .contact-box li:nth-child(2) {
+  margin-left: 78px;
 }
 .home .contact form {
   margin-top: 30px;
