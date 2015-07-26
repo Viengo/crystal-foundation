@@ -1,14 +1,16 @@
 <section class="services">
-    <h2>Services</h2>
-
-    <div class="container">
+    <h3>Services</h3>
         <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-            @@include('../widgets/service-item.html',{"title":"web design", "data":"Want to make your idea live and to find out solutions for your business? Our designers ready to imbue your target for creation your best layout."})
-            @@include('../widgets/service-item.html',{"title":"responsive landing page", "data":"Let us design your new landing page and make it responsive. We test heavily across devices, integrate analytics tools and focus on UX to improve convertation rates."})
+            <div class="small-12 medium-10 large-3 columns service-items">
+            @@include('../widgets/service-item.html',{"title":"web design", "data":"Want to make your idea live and to find out solutions for your business? Our designers ready to imbue your target for creation your best layout.","img":"web-design"})
+            @@include('../widgets/service-item.html',{"title":"responsive landing page", "data":"Let us design your new landing page and make it responsive. We test heavily across devices, integrate analytics tools and focus on UX to improve convertation rates.","img":"responsive"})
+            </div>
+            <div class="small-12 medium-10 large-3 columns service-items">
+                @@include('../widgets/service-item.html',{"title":"web services", "data":"We design, develop and test  ensuring world-class product quality. Our experience allows us to create quickly and reliably.","img":"web-service"})
+                @@include('../widgets/service-item.html',{"title":"graphic design", "data":"Are you a business owner and would like to brighten it? For you we will create a logo, corporate identity and an infographic that emphasizes your individuality and allocates on the thematic market.","img":"graphic-design"})
+            </div>
         </div>
-    </div>
-    </div>
-
-
+        <div class="small-12 medium-10 large-3 columns service-items small-centered">
+            @@include('../widgets/service-item.html',{"title":"PSD to HTML", "data":"It's simple! You give us your design, and than recieve the valid, flexible, SEO-friendly layout created using leading technologies.","img":"psd-to"})
+        </div>
 </section>

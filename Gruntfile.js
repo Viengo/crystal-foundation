@@ -15,6 +15,7 @@ module.exports = function (grunt) {
                 'bower_components/modernizr/modernizr.js',
                 //'bower_components/parallax.js/parallax.min.js',
                 'bower_components/foundation/js/foundation.min.js',
+                 'bower_components/foundation/js/foundation/foundation.offcanvas.js',
                 //ss'bower_components/foundation/js/foundation/foundation.clearing.js',
                 'client/js/index.js'
                 ],

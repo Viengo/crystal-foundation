@@ -25,10 +25,10 @@ $side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%) !
 $side-nav-link-bg-hover: hsla(0, 0, 0, .025) !default;
 $side-nav-link-margin: 0 !default;
 $side-nav-link-padding: rem-calc(7 14) !default;
-$side-nav-font-size: rem-calc(14) !default;
+$side-nav-font-size: rem-calc(18) !default;
 $side-nav-font-weight: $font-weight-normal !default;
 $side-nav-font-weight-active: $side-nav-font-weight !default;
-$side-nav-font-family: $body-font-family !default;
+$side-nav-font-family: "Tunga";
 $side-nav-font-family-active: $side-nav-font-family !default;
 
 // We use these to control heading styles.
@@ -66,7 +66,7 @@ $side-nav-divider-color: scale-color($white, $lightness: -10%) !default;
   list-style-position: $side-nav-list-position;
   list-style-type: $side-nav-list-type;
   margin: 0;
-  padding: $side-nav-padding;
+  padding: 80px 0 0;
 
   li {
     font-size: $font-size;
@@ -74,17 +74,19 @@ $side-nav-divider-color: scale-color($white, $lightness: -10%) !default;
     margin: $side-nav-list-margin;
 
     a:not(.button) {
-      color: $link-color;
+      color: #ffffff;
       display: block;
-      margin: $side-nav-link-margin;
+      margin: 0 auto;
       padding: $side-nav-link-padding;
+      text-align: center;
+      text-transform: uppercase;
       &:hover,
       &:focus {
-        background: $link-bg-hover;
-        color: $link-color-hover;
+        background: #8ce0f9;
+        color: #ffffff;
       }
       &:active {
-        color: $link-color-active;
+        color: #ffffff;
       }
     }
 

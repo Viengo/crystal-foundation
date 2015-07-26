@@ -1,11 +1,19 @@
 .work {
     padding: 190px 0 110px;
+    background-image: url("../../images/backgrounds/work-back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     @include breakpoint(extra-small) {
         padding: 50px 0 60px;
     }
 
     .solutions {
-        @include breakpoint(extra-small) {
+        @media #{$medium-only} {
+            float: none;
+            margin: 50px auto 0;
+        }
+        @media #{$small-only} {
             margin-top: 50px;
         }
 
@@ -26,11 +34,7 @@
             font-size: 14px;
             line-height: 25px;
             text-align: left;
-            @include breakpoint(small) {
-                padding: 0 30px;
-                text-align: justify;
-            }
-            @include breakpoint(extra-small) {
+            @media #{$small-only} {
                 margin-top: 15px;
                 padding: 0;
                 text-align: justify;
@@ -39,38 +43,18 @@
 
         .slide-examples {
             font-size: 0;
-            //text-align: center;
+            padding-top: 20px;
+            text-align: center;
 
             li {
-                float: none;
-                display: inline-block;
-                margin: 35px 0 0 15px;
-                @include breakpoint(small) {
-                    margin-left: 10px;
-                }
-                @include breakpoint(extra-small) {
-                    margin: 20px 0 0 10px;
-                }
+               margin: 15px 0;
 
-                &:first-child {
-                    margin-left: 0;
-                }
-
-                a{
+                a {
                     display: block;
 
                     img {
                         width: 146px;
                         border: 2px solid transparent;
-                        @include breakpoint(medium) {
-                            width: 120px;
-                        }
-                        @include breakpoint(small) {
-                            width: 100px;
-                        }
-                        @include breakpoint(extra-small) {
-                            width: 85px;
-                        }
 
                         &:hover {
                             border-color: #ffffff;
@@ -83,7 +67,7 @@
 
         .button-style {
             margin: 50px auto 0;
-            @include breakpoint(extra-small) {
+            @media #{$small-only} {
                 margin: 20px auto 0;
             }
         }

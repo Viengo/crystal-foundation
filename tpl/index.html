@@ -10,16 +10,16 @@
     <script src="build/js/index.min.js"></script>
 </head>
 <body class="home">
-<main>
-    @@include('layouts/work.html')
-    @@include('layouts/about.html')
-    <div class="carousel">
-    <ul class="clearing-thumbs" data-clearing>
-        <li><a class="th" href="client/images/slide/breakfasty-big.jpg"><img src="client/images/slide/breakfasty.jpg"></a></li>
-        <li><a class="th" href="client/images/slide/breakfasty-big.jpg"><img src="client/images/slide/breakfasty.jpg"></a></li>
-        <li><a class="th" href="client/images/slide/breakfasty-big.jpg"><img src="client/images/slide/breakfasty.jpg"></a></li>
-    </ul>
-        </div>
-</main>
+<div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+        @@include('widgets/menu.html')
+        @@include('widgets/header.html')
+        <main>
+            @@include('layouts/services.html')
+            @@include('layouts/work.html')
+            @@include('layouts/about.html')
+        </main>
+    </div>
+</div>
 </body>
 </html>

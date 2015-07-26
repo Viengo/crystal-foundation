@@ -1,0 +1,88 @@
+.services {
+    text-align: center;
+    padding: 45px 0 84px;
+    @media #{$large-up}{
+        padding: 135px 0 140px;
+        background-image: url("../../images/backgrounds/services.png");
+        background-repeat: no-repeat;
+        background-position: 50% 36%;
+    }
+
+    h3 {
+        margin: 0;
+        font-family: "Tunga";
+        font-size: 48px;
+        text-transform: uppercase;
+    }
+
+    .service-items {
+        @media #{$medium-only}{
+            float: none;
+            margin: 0 auto;
+        }
+        @media #{$small-only}{
+            float: none;
+            margin: 0 auto;
+        }
+
+        figure {
+            margin-top: 85px;
+            @media #{$small-only}{
+                margin-top: 35px;
+            }
+
+            img {
+                display: inline-block;
+                margin-right: 30px;
+                vertical-align: top;
+                @media #{$small-only}{
+                    width: 50px;
+                    margin-right: 0;
+                }
+                @media #{$large-up}{
+                    display: none;
+                }
+            }
+
+            figcaption {
+                @media #{$medium-only}{
+                    display: inline-block;
+                    max-width: 370px;
+                }
+
+                h2 {
+                    margin: 0;
+                    font-family: "Roboto";
+                    font-weight: 500;
+                    font-size: 22px;
+                    text-align: left;
+                    text-transform: capitalize;
+                    color: #4095b4;
+                    @media #{$small-only}{
+                        margin-top: 15px;
+                        text-align: center;
+                    }
+                }
+
+                p {
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                    font-family: "Roboto";
+                    font-weight: 100;
+                    font-size: 14px;
+                    line-height: 25px;
+                    text-align: left;
+                }
+
+                .button-style {
+                    float: right;
+                    margin-top: 15px;
+                    @media #{$small-only}{
+                        float: none;
+                        margin: 15px auto 0;
+                    }
+                }
+            }
+        }
+    }
+}
