@@ -10,13 +10,10 @@
         font-family: "Tunga";
         font-size: 48px;
         text-transform: uppercase;
+        @include user-select(none);
     }
 
     p {
-        margin: 0;
-        font-family: "Roboto";
-        font-weight: 100;
-        font-size: 14px;
         line-height: 30px;
 
         &:first-of-type {

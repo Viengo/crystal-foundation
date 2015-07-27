@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    @include breakpoint(extra-small) {
+    @media #{$small-only} {
         padding: 50px 0 60px;
     }
 
@@ -18,22 +18,19 @@
         }
 
         h2 {
-            margin: 0;
-            font-family: "Roboto";
             font-weight: 500;
             font-size: 24px;
             text-align: center;
+            @include user-select(none);
         }
 
         p {
             margin-top: 30px;
-            margin-bottom: 0;
-            padding: 0 48px;
-            font-family: "Roboto";
-            font-weight: 100;
-            font-size: 14px;
             line-height: 25px;
             text-align: left;
+            @media #{$large-up}{
+                padding: 0 48px;
+            }
             @media #{$small-only} {
                 margin-top: 15px;
                 padding: 0;
@@ -42,7 +39,6 @@
         }
 
         .slide-examples {
-            font-size: 0;
             padding-top: 20px;
             text-align: center;
 
@@ -55,6 +51,7 @@
                     img {
                         width: 146px;
                         border: 2px solid transparent;
+                        @include user-select(none);
                         @include transition-property(border-color);
                         @include transition-duration(200ms);
 
@@ -67,7 +64,7 @@
             }
         }
 
-        .button-style {
+        .buton {
             margin: 50px auto 0;
             @media #{$small-only} {
                 margin: 20px auto 0;

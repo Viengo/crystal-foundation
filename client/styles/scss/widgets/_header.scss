@@ -4,6 +4,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @include user-select(none);
     @media #{$medium-only} {
         padding: 150px 0 200px;
     }
@@ -26,7 +27,7 @@ header {
 
         }
 
-        h3 {
+        h2 {
             margin: 15px 0 0 0;
             font-family: "Tunga";
             font-size: 36px;
@@ -59,6 +60,7 @@ header {
 
         }
     }
+
     .white {
         margin: 20px auto 0;
     }
@@ -127,5 +129,4 @@ header {
 
         }
     }
-
 }

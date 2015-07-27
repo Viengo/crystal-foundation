@@ -12,8 +12,6 @@
 @import "contacts/*.png";
 
 //mixins
-@import "mixins/breakpoints";
-@import "mixins/placeholder";
 @import "mixins/user-select";
 
 //fonts
@@ -22,9 +20,9 @@
 
 //components
 @import "components/button";
+@import "components/menu";
 
 //widgets
-@import "widgets/menu";
 @import "widgets/header";
 @import "widgets/contact-box";
 

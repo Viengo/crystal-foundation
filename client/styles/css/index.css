@@ -2061,7 +2061,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   font-family: "Roboto";
   font-size: 0.875rem;
   height: 2.3125rem;
-  margin: 0 0 1rem 0;
+  margin: 0;
   padding: 0.5rem;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -3641,15 +3641,15 @@ a img {
 
 /* Default paragraph styles */
 p {
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: normal;
+  font-family: "Roboto";
+  font-size: 0.875rem;
+  font-weight: 300;
   line-height: 1.6;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
   text-rendering: optimizeLegibility;
 }
 p.lead {
-  font-size: 1.21875rem;
+  font-size: 1.09375rem;
   line-height: 1.6;
 }
 p aside {
@@ -3661,12 +3661,12 @@ p aside {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #222222;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   line-height: 1.4;
-  margin-bottom: 0.5rem;
-  margin-top: 0.2rem;
+  margin-bottom: 0;
+  margin-top: 0;
   text-rendering: optimizeLegibility;
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
@@ -3748,15 +3748,15 @@ code {
 ul,
 ol,
 dl {
-  font-family: inherit;
-  font-size: 1rem;
+  font-family: "Roboto";
+  font-size: 0.875rem;
   line-height: 1.6;
   list-style-position: outside;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
 }
 
 ul {
-  margin-left: 1.1rem;
+  margin-left: 0;
 }
 ul.no-bullet {
   margin-left: 0;
@@ -3779,15 +3779,15 @@ ul.square li ul, ul.circle li ul, ul.disc li ul {
 }
 ul.square {
   list-style-type: square;
-  margin-left: 1.1rem;
+  margin-left: 0;
 }
 ul.circle {
   list-style-type: circle;
-  margin-left: 1.1rem;
+  margin-left: 0;
 }
 ul.disc {
   list-style-type: disc;
-  margin-left: 1.1rem;
+  margin-left: 0;
 }
 ul.no-bullet {
   list-style: none;
@@ -3795,7 +3795,7 @@ ul.no-bullet {
 
 /* Ordered Lists */
 ol {
-  margin-left: 1.4rem;
+  margin-left: 0;
 }
 ol li ul,
 ol li ol {
@@ -3830,7 +3830,7 @@ abbr[title] {
 
 /* Blockquotes */
 blockquote {
-  margin: 0 0 1.25rem;
+  margin: 0 0 0;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
   border-left: 1px solid #DDDDDD;
 }
@@ -4984,7 +4984,7 @@ th.hide-for-touch {
   font-family: "Tunga";
   src: url('../fonts/../../fonts/tunga/tunga.ttf') format('truetype'), url('../fonts/../../fonts/tunga/tunga.svg') format('svg'), url('../fonts/../../fonts/tunga/tunga.otf') format('opentype'), url('../fonts/../../fonts/tunga/tunga.woff') format('woff');
 }
-.button-style {
+.buton {
   display: block;
   width: 164px;
   font-family: "Roboto";
@@ -4993,6 +4993,12 @@ th.hide-for-touch {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
   -moz-transition-property: background-color;
   -o-transition-property: background-color;
   -webkit-transition-property: background-color;
@@ -5002,46 +5008,57 @@ th.hide-for-touch {
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-.button-style.black {
+.buton:focus {
+  outline: none;
+}
+.buton.black {
   border: 1px solid #000000;
   font-weight: 400;
   color: #000000;
 }
-.button-style.black:hover, .button-style.black:active {
+.buton.black:hover, .buton.black:active {
   border-color: transparent;
   color: #ffffff;
 }
-.button-style.black:hover {
+.buton.black:hover {
   background-color: #7fbcd7;
 }
-.button-style.black:active {
+.buton.black:active {
   background-color: #538da7;
 }
-.button-style.white {
+.buton.white {
   border: 2px solid #ffffff;
   color: #ffffff;
 }
-.button-style.white:hover {
+.buton.white:hover {
   border: 1px solid #ffffff;
   background-color: #7bc4e6;
   line-height: 38px;
 }
-.button-style.white:active {
+.buton.white:active {
   border: 2px solid #3484a9;
   background-color: #378fb8;
   line-height: 36px;
 }
-.button-style.orange {
+.buton.orange {
   background-color: #de6c40;
   color: #ffffff;
 }
-.button-style.orange:hover {
+.buton.orange:hover {
   background-color: #f17645;
 }
-.button-style.orange:active {
+.buton.orange:active {
   background-color: #d76437;
 }
 
+.menu-style {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
 .menu-style a {
   display: inline-block;
 }
@@ -5055,6 +5072,12 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
   header {
@@ -5083,7 +5106,7 @@ header .logo img {
     max-width: 400px;
   }
 }
-header .logo h3 {
+header .logo h2 {
   margin: 15px 0 0 0;
   font-family: "Tunga";
   font-size: 36px;
@@ -5092,7 +5115,7 @@ header .logo h3 {
   color: #fefefe;
 }
 @media only screen and (max-width: 40em) {
-  header .logo h3 {
+  header .logo h2 {
     font-size: 30px;
   }
 }
@@ -5231,11 +5254,17 @@ header .scroll-open ul li a {
     background-position: 50% 36%;
   }
 }
-.home .services h3 {
+.home .services h2 {
   margin: 0;
   font-family: "Tunga";
   font-size: 48px;
   text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
   .home .services .service-items {
@@ -5258,9 +5287,14 @@ header .scroll-open ul li a {
   }
 }
 .home .services .service-items figure img {
-  display: inline-block;
   margin-right: 30px;
   vertical-align: top;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 @media only screen and (max-width: 40em) {
   .home .services .service-items figure img {
@@ -5279,9 +5313,7 @@ header .scroll-open ul li a {
     max-width: 370px;
   }
 }
-.home .services .service-items figure figcaption h2 {
-  margin: 0;
-  font-family: "Roboto";
+.home .services .service-items figure figcaption h3 {
   font-weight: 500;
   font-size: 22px;
   text-align: left;
@@ -5289,26 +5321,22 @@ header .scroll-open ul li a {
   color: #4095b4;
 }
 @media only screen and (max-width: 40em) {
-  .home .services .service-items figure figcaption h2 {
+  .home .services .service-items figure figcaption h3 {
     margin-top: 15px;
     text-align: center;
   }
 }
 .home .services .service-items figure figcaption p {
   margin-top: 20px;
-  margin-bottom: 0;
-  font-family: "Roboto";
-  font-weight: 100;
-  font-size: 14px;
   line-height: 25px;
   text-align: left;
 }
-.home .services .service-items figure figcaption .button-style {
+.home .services .service-items figure figcaption .buton {
   float: right;
   margin-top: 15px;
 }
 @media only screen and (max-width: 40em) {
-  .home .services .service-items figure figcaption .button-style {
+  .home .services .service-items figure figcaption .buton {
     float: none;
     margin: 15px auto 0;
   }
@@ -5320,7 +5348,7 @@ header .scroll-open ul li a {
   background-position: center;
   background-size: cover;
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 40em) {
   .home .work {
     padding: 50px 0 60px;
   }
@@ -5337,21 +5365,25 @@ header .scroll-open ul li a {
   }
 }
 .home .work .solutions h2 {
-  margin: 0;
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 24px;
   text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 .home .work .solutions p {
   margin-top: 30px;
-  margin-bottom: 0;
-  padding: 0 48px;
-  font-family: "Roboto";
-  font-weight: 100;
-  font-size: 14px;
   line-height: 25px;
   text-align: left;
+}
+@media only screen and (min-width: 64.0625em) {
+  .home .work .solutions p {
+    padding: 0 48px;
+  }
 }
 @media only screen and (max-width: 40em) {
   .home .work .solutions p {
@@ -5361,7 +5393,6 @@ header .scroll-open ul li a {
   }
 }
 .home .work .solutions .slide-examples {
-  font-size: 0;
   padding-top: 20px;
   text-align: center;
 }
@@ -5374,6 +5405,12 @@ header .scroll-open ul li a {
 .home .work .solutions .slide-examples li a img {
   width: 146px;
   border: 2px solid transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
   -moz-transition-property: border-color;
   -o-transition-property: border-color;
   -webkit-transition-property: border-color;
@@ -5386,11 +5423,11 @@ header .scroll-open ul li a {
 .home .work .solutions .slide-examples li a img:hover {
   border-color: #ffffff;
 }
-.home .work .solutions .button-style {
+.home .work .solutions .buton {
   margin: 50px auto 0;
 }
 @media only screen and (max-width: 40em) {
-  .home .work .solutions .button-style {
+  .home .work .solutions .buton {
     margin: 20px auto 0;
   }
 }
@@ -5408,12 +5445,14 @@ header .scroll-open ul li a {
   font-family: "Tunga";
   font-size: 48px;
   text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 .home .about p {
-  margin: 0;
-  font-family: "Roboto";
-  font-weight: 100;
-  font-size: 14px;
   line-height: 30px;
 }
 .home .about p:first-of-type {
@@ -5438,11 +5477,14 @@ header .scroll-open ul li a {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 .home .contact p {
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 14px;
   color: #ffffff;
 }
 .home .contact p:first-child {
@@ -5465,7 +5507,6 @@ header .scroll-open ul li a {
 .home .contact form textarea {
   width: 100%;
   height: 167px;
-  margin: 0;
   resize: none;
   padding: 18px 22px;
   border: 1px solid #5f6c72;
@@ -5496,22 +5537,28 @@ header .scroll-open ul li a {
 .home .contact form small {
   text-transform: uppercase;
 }
-.home .contact form .button-style {
+.home .contact form .buton {
   margin: 40px 0 0 0;
   padding: 0;
 }
 @media only screen and (min-width: 40.0625em) {
-  .home .contact form .button-style {
+  .home .contact form .buton {
     float: right;
   }
 }
 @media only screen and (max-width: 40em) {
-  .home .contact form .button-style {
+  .home .contact form .buton {
     margin-top: 30px;
   }
 }
 .home .contact .footer {
   padding-top: 350px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 @media only screen and (max-width: 40em) {
   .home .contact .footer {

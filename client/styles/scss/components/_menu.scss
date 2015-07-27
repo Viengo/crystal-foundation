@@ -1,4 +1,6 @@
 .menu-style {
+    @include user-select(none);
+
     a {
         display: inline-block;
 

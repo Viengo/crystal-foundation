@@ -1,4 +1,4 @@
-.button-style {
+.buton {
     display: block;
     width: 164px;
     font-family: "Roboto";
@@ -7,9 +7,13 @@
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
+    @include user-select(none);
     @include transition-property(background-color);
     @include transition-duration(300ms);
 
+    &:focus {
+        outline: none;
+    }
     &.black {
         border: 1px solid #000000;
         font-weight: 400;

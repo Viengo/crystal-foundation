@@ -8,11 +8,12 @@
         background-position: 50% 36%;
     }
 
-    h3 {
+    h2 {
         margin: 0;
         font-family: "Tunga";
         font-size: 48px;
         text-transform: uppercase;
+        @include user-select(none);
     }
 
     .service-items {
@@ -32,9 +33,9 @@
             }
 
             img {
-                display: inline-block;
                 margin-right: 30px;
                 vertical-align: top;
+                @include user-select(none);
                 @media #{$small-only}{
                     width: 50px;
                     margin-right: 0;
@@ -50,9 +51,7 @@
                     max-width: 370px;
                 }
 
-                h2 {
-                    margin: 0;
-                    font-family: "Roboto";
+                h3 {
                     font-weight: 500;
                     font-size: 22px;
                     text-align: left;
@@ -66,15 +65,11 @@
 
                 p {
                     margin-top: 20px;
-                    margin-bottom: 0;
-                    font-family: "Roboto";
-                    font-weight: 100;
-                    font-size: 14px;
                     line-height: 25px;
                     text-align: left;
                 }
 
-                .button-style {
+                .buton {
                     float: right;
                     margin-top: 15px;
                     @media #{$small-only}{
