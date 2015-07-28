@@ -1,12 +1,14 @@
 
  //Slider Settings
-     //parallax
+
 
  $(document).on('ready', function () {
-     $(document).foundation();
-    // $(".scroll-open").hide();
+     $(document).foundation({
+         offcanvas: {
+             close_on_click: true
+         }
+     });
  });
-
 
 
  $(window).on("scroll", function () {
@@ -17,6 +19,4 @@
          $(".scroll-open").hide()
      }
  });
-   //  $('.parallax-window').parallax({
-      //   naturalHeight: 900
-    // });
+

@@ -4,6 +4,10 @@
     a {
         display: inline-block;
 
+        &.buton {
+            float: right;
+        }
+
         img {
             width: 168px;
         }

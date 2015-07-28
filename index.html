@@ -24,13 +24,12 @@
 
 </nav>
 <aside class="right-off-canvas-menu">
-    <ul class="side-nav">
-        <li><a href="javascript:void(0)">Home</a></li>
-        <li><a href="javascript:void(0)">Services</a></li>
-        <li><a href="javascript:void(0)">Work</a></li>
-        <li><a href="javascript:void(0)">About</a></li>
-        <li><a href="javascript:void(0)">Contact</a></li>
-        <li><a class="buton white" href="javascript:void(0)">get in touch</a></li>
+    <ul class="side-nav nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </aside>
         <header>
@@ -42,25 +41,26 @@
         </div>
         <nav class="medium-3 large-2 large offset-1 columns hide-for-small">
             <ul>
-                <li><a href="javascript:void(0)">Services</a></li>
-                <li><a href="javascript:void(0)">Work</a></li>
-                <li><a href="javascript:void(0)">About</a></li>
-                <li><a href="javascript:void(0)">Contact</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
-    <nav class="scroll-open">
-        <div class="row show-for-large-up">
-            <div class="large-3 columns">
+    <nav class="scroll-open show-for-medium-up">
+        <div class="row">
+            <div class="medium-3 large-3 columns">
                 <a href="#"><img src="client/images/logo/home-logo.png" alt=""/></a>
             </div>
-        <ul class="large-6 columns">
-            <li><a href="javascript:void(0)">Services</a></li>
-            <li><a href="javascript:void(0)">Work</a></li>
-            <li><a href="javascript:void(0)">About</a></li>
-            <li><a href="javascript:void(0)">Contact</a></li>
+        <ul class="medium-9 large-6 columns">
+            <li><a href="#">Home</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-            <div class="large-3 columns clearfix">
+            <div class="large-3 columns clearfix show-for-large-up">
                 <a class="buton orange" href="javascript:void(0)">get in touch</a>
             </div>
         </div>
@@ -68,11 +68,12 @@
     <a class="buton white show-for-small" href="javascript:void(0)">get in touch</a>
 </header>
         <main>
-            <section class="services">
+            <section class="services" id="service">
     <h2>Services</h2>
         <div class="row">
             <div class="small-12 medium-10 large-3 columns service-items">
-            <figure class="clearfix">
+            <div class="figure-wrapper left-align">
+<figure class="clearfix">
     <img src="client/images/service/web-design.png" alt=""/>
     <figcaption>
     <h3>web design</h3>
@@ -80,7 +81,9 @@
     <a class="buton black" href="javascript:void(0)">request a quote</a>
     </figcaption>
 </figure>
-            <figure class="clearfix">
+</div>
+            <div class="figure-wrapper left-align">
+<figure class="clearfix">
     <img src="client/images/service/responsive.png" alt=""/>
     <figcaption>
     <h3>responsive landing page</h3>
@@ -88,9 +91,14 @@
     <a class="buton black" href="javascript:void(0)">request a quote</a>
     </figcaption>
 </figure>
+</div>
             </div>
+            <!--<div class="large-6 columns show-for-large-up">-->
+                <!--<img src="client/images/backgrounds/services.png" alt=""/>-->
+            <!--</div>-->
             <div class="small-12 medium-10 large-3 columns service-items">
-                <figure class="clearfix">
+                <div class="figure-wrapper right-align">
+<figure class="clearfix">
     <img src="client/images/service/web-service.png" alt=""/>
     <figcaption>
     <h3>web services</h3>
@@ -98,7 +106,9 @@
     <a class="buton black" href="javascript:void(0)">request a quote</a>
     </figcaption>
 </figure>
-                <figure class="clearfix">
+</div>
+                <div class="figure-wrapper right-align">
+<figure class="clearfix">
     <img src="client/images/service/graphic-design.png" alt=""/>
     <figcaption>
     <h3>graphic design</h3>
@@ -106,10 +116,13 @@
     <a class="buton black" href="javascript:void(0)">request a quote</a>
     </figcaption>
 </figure>
+</div>
             </div>
         </div>
+    <div class="row">
         <div class="small-12 medium-10 large-3 columns service-items small-centered">
-            <figure class="clearfix">
+            <div class="figure-wrapper center">
+<figure class="clearfix">
     <img src="client/images/service/psd-to.png" alt=""/>
     <figcaption>
     <h3>PSD to HTML</h3>
@@ -117,9 +130,11 @@
     <a class="buton black" href="javascript:void(0)">request a quote</a>
     </figcaption>
 </figure>
+</div>
         </div>
+    </div>
 </section>
-            <section class="work">
+            <section class="work" id="work">
     <div class="row">
         <div class="small-12 medium-8 large-6 columns solutions">
             <h2>Graphic Solutions</h2>
@@ -147,7 +162,7 @@
         </div>
     </div>
 </section>
-            <section class="about">
+            <section class="about" id="about">
     <h3>About</h3>
     <p>We are a young team that has great start in web indusry.
         We’re not afraid to use new technologies and than embed it in projects.
@@ -156,7 +171,7 @@
     <p>Our process implicates involvement QA engineers, which allows us to demonstrate good quality.
         Managers at UI Crystal respond you 24/7 and tech lead organizes work on the project.</p>
 </section>
-            <section class="contact">
+            <section class="contact" id="contact">
     <h3>contact us</h3>
     <ul class="contact-box clearfix">
         <li><a href="mailto:uicrystal@ui.com?subject=Contact">uicrystal@ui.com</a></li>

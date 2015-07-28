@@ -27,7 +27,7 @@ $tabbar-header-line-height: $tabbar-height !default;
 $tabbar-header-margin: 0 !default;
 
 // Off Canvas Menu Variables
-$off-canvas-width: rem-calc(250) !default;
+$off-canvas-width: rem-calc(145) !default;
 $off-canvas-bg: #5fcaf2;
 $off-canvas-bg-hover: scale-color($tabbar-bg, $lightness: -30%) !default;
 $off-canvas-bg-active: scale-color($tabbar-bg, $lightness: -30%) !default;

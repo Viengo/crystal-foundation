@@ -1,6 +1,9 @@
 .services {
     text-align: center;
-    padding: 45px 0 84px;
+    padding: 45px 0 60px;
+    @media #{$medium-only}{
+        padding: 50px 0 85px;
+    }
     @media #{$large-up}{
         padding: 135px 0 140px;
         background-image: url("../../images/backgrounds/services.png");
@@ -11,12 +14,16 @@
     h2 {
         margin: 0;
         font-family: "Tunga";
-        font-size: 48px;
+        font-size: 30px;
         text-transform: uppercase;
         @include user-select(none);
+        @media #{$large-up}{
+            font-size: 48px;
+        }
     }
 
     .service-items {
+
         @media #{$medium-only}{
             float: none;
             margin: 0 auto;
@@ -25,56 +32,70 @@
             float: none;
             margin: 0 auto;
         }
-
-        figure {
-            margin-top: 85px;
-            @media #{$small-only}{
-                margin-top: 35px;
-            }
-
-            img {
-                margin-right: 30px;
-                vertical-align: top;
-                @include user-select(none);
-                @media #{$small-only}{
-                    width: 50px;
-                    margin-right: 0;
+        .figure-wrapper {
+            &.left-align {
+                figure {
+                    &:first-child {
+                        @media #{$small-only}{
+                            margin-top: 20px;
+                        }
+                        @media #{$medium-only}{
+                            margin-top: 35px;
+                        }
+                    }
                 }
+            }
+            &.center {
                 @media #{$large-up}{
-                    display: none;
+                    figure{
+                        margin-top: 0;
+                    }
                 }
             }
 
-            figcaption {
-                @media #{$medium-only}{
-                    display: inline-block;
-                    max-width: 370px;
+            figure {
+                margin-top: 50px;
+                @media #{$large-up}{
+                    margin-top: 85px;
                 }
 
-                h3 {
-                    font-weight: 500;
-                    font-size: 22px;
-                    text-align: left;
-                    text-transform: capitalize;
-                    color: #4095b4;
+                img {
+                    margin-right: 30px;
+                    vertical-align: top;
+                    @include user-select(none);
                     @media #{$small-only}{
-                        margin-top: 15px;
-                        text-align: center;
+                        width: 50px;
+                        margin-right: 0;
+                    }
+                    @media #{$large-up}{
+                        display: none;
                     }
                 }
 
-                p {
-                    margin-top: 20px;
-                    line-height: 25px;
-                    text-align: left;
-                }
+                figcaption {
+                    @media #{$medium-only}{
+                        display: inline-block;
+                        max-width: 370px;
+                    }
 
-                .buton {
-                    float: right;
-                    margin-top: 15px;
-                    @media #{$small-only}{
-                        float: none;
-                        margin: 15px auto 0;
+                    h3 {
+                        @media #{$small-only}{
+                            margin-top: 15px;
+                            text-align: center;
+                        }
+                    }
+
+                    p {
+                        margin-top: 20px;
+                    }
+
+                    .buton {
+                        float: right;
+                        margin-top: 15px;
+                        @media #{$small-only}{
+                            float: none;
+                            margin: 15px auto 0;
+                        }
                     }
                 }
             }
