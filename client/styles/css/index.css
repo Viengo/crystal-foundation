@@ -4998,7 +4998,6 @@ th.hide-for-touch {
   -khtml-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: default;
   -moz-transition-property: background-color;
   -o-transition-property: background-color;
   -webkit-transition-property: background-color;
@@ -5052,12 +5051,12 @@ th.hide-for-touch {
 }
 
 .menu-style {
+  padding: 0 15px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: default;
 }
 .menu-style a {
   display: inline-block;
@@ -5070,7 +5069,7 @@ th.hide-for-touch {
 }
 
 header {
-  padding: 175px 0 444px;
+  padding: 175px 0 520px;
   background-image: url("../../images/backgrounds/header-back.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -5080,16 +5079,15 @@ header {
   -khtml-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: default;
 }
 @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
   header {
-    padding: 150px 0 200px;
+    padding: 50px 0 130px;
   }
 }
 @media only screen and (max-width: 40em) {
   header {
-    padding: 150px 0;
+    padding: 75px 0 140px;
   }
 }
 header .logo {
@@ -5104,7 +5102,7 @@ header .logo {
 header .logo img {
   width: 100%;
 }
-@media only screen and (min-width: 64.0625em) {
+@media only screen and (min-width: 40.0625em) {
   header .logo img {
     max-width: 400px;
   }
@@ -5123,7 +5121,7 @@ header .logo h2 {
   }
 }
 header nav ul {
-  margin: 0;
+  margin: 0 0 0 104px;
 }
 header nav ul li {
   display: block;
@@ -5132,19 +5130,29 @@ header nav ul li a {
   display: block;
   font-family: "Tunga";
   font-size: 18px;
-  line-height: 46px;
+  line-height: 47px;
   text-transform: uppercase;
   text-align: left;
   color: #4a7999;
 }
-header .white {
-  margin: 20px auto 0;
+header .buton.white {
+  margin: 55px auto 0;
+  background-color: #5fcaf2;
+}
+header .buton.white:hover {
+  background-color: #ffffff;
+  color: #5fcaf2;
+}
+header .buton.white:active {
+  border: 2px solid #43a9cf;
+  background-color: #43a9cf;
+  color: #ffffff;
 }
 
 .scroll-open {
   position: fixed;
   z-index: 1;
-  top: 0;
+  bottom: 0;
   display: none;
   width: 100%;
   padding: 22px 0 14px;
@@ -5279,7 +5287,7 @@ header .white {
   color: #4095b4;
 }
 .figure-wrapper figure figcaption p {
-  line-height: 25px;
+  line-height: 22px;
   text-align: left;
 }
 
@@ -5352,7 +5360,6 @@ header .white {
   -khtml-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: default;
 }
 @media only screen and (min-width: 64.0625em) {
   .home .services h2 {
@@ -5383,7 +5390,7 @@ header .white {
 }
 @media only screen and (min-width: 64.0625em) {
   .home .services .service-items .figure-wrapper.center figure {
-    margin-top: 0;
+    margin-top: 10px;
   }
 }
 .home .services .service-items .figure-wrapper figure {
@@ -5402,7 +5409,6 @@ header .white {
   -khtml-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: default;
 }
 @media only screen and (max-width: 40em) {
   .home .services .service-items .figure-wrapper figure img {
@@ -5477,7 +5483,6 @@ header .white {
   -khtml-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: default;
 }
 .home .work .solutions p {
   margin-top: 30px;
@@ -5514,7 +5519,6 @@ header .white {
   -khtml-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: default;
   -moz-transition-property: border-color;
   -o-transition-property: border-color;
   -webkit-transition-property: border-color;
@@ -5559,7 +5563,6 @@ header .white {
   -khtml-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: default;
 }
 .home .about p {
   line-height: 30px;
@@ -5591,7 +5594,6 @@ header .white {
   -khtml-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: default;
 }
 .home .contact p {
   color: #ffffff;
@@ -5667,7 +5669,6 @@ header .white {
   -khtml-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: default;
 }
 @media only screen and (max-width: 40em) {
   .home .contact .footer {

@@ -1,15 +1,15 @@
 header {
-    padding: 175px 0 444px;
+    padding: 175px 0 520px;
     background-image: url("../../images/backgrounds/header-back.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     @include user-select(none);
     @media #{$medium-only} {
-        padding: 150px 0 200px;
+        padding: 50px 0 130px;
     }
     @media #{$small-only} {
-        padding: 150px 0;
+        padding: 75px 0 140px;
     }
 
     .logo {
@@ -19,12 +19,10 @@ header {
             margin: 0 auto;
         }
         img {
-            @media #{$large-up} {
+            width: 100%;
+            @media #{$medium-up} {
                 max-width: 400px;
             }
-
-            width: 100%;
-
         }
 
         h2 {
@@ -42,7 +40,7 @@ header {
 
     nav {
         ul {
-            margin: 0;
+            margin: 0 0 0 104px;
 
             li {
                 display: block;
@@ -51,19 +49,29 @@ header {
                     display: block;
                     font-family: "Tunga";
                     font-size: 18px;
-                    line-height: 46px;
+                    line-height: 47px;
                     text-transform: uppercase;
                     text-align: left;
                     color: #4a7999;
                 }
             }
-
         }
     }
+    .buton {
+        &.white {
+            margin: 55px auto 0;
+            background-color: #5fcaf2;
 
-    .white {
-        margin: 20px auto 0;
+            &:hover {
+                background-color: #ffffff;
+                color: #5fcaf2;
+            }
+
+            &:active {
+                border: 2px solid #43a9cf;
+                background-color: #43a9cf;
+                color: #ffffff;
+            }
+        }
     }
-
-
 }
