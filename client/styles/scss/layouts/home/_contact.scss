@@ -4,6 +4,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @media #{$medium-only}{
+        padding-top: 50px;
+    }
     @media #{$small-only}{
         padding-top: 45px;
     }
@@ -94,6 +97,9 @@
     .footer {
         padding-top: 350px;
         @include user-select(none);
+        @media #{$medium-only}{
+            padding-top: 150px;
+        }
         @media #{$small-only}{
             padding-top: 100px;
         }

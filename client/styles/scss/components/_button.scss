@@ -14,23 +14,11 @@
     &:focus {
         outline: none;
     }
+
     &.black {
         border: 1px solid #000000;
         font-weight: 400;
         color: #000000;
-
-        &:hover,&:active {
-            border-color: transparent;
-            color: #ffffff;
-        }
-
-        &:hover{
-            background-color: #7fbcd7;;
-        }
-
-        &:active {
-            background-color: #538da7;
-        }
     }
 
     &.white {

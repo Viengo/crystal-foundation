@@ -12,7 +12,8 @@
 
 //scroll-open effect
  $(window).on("scroll touchmove", function () {
-     if ($('.contain-to-grid').toggleClass('fixed', $(document).scrollTop() > 869)) {
+     if ( $(document).scrollTop() > 869) {
+         $('.contain-to-grid').addClass('fixed');
          $(".scroll-open").show()
      }
      else {
@@ -20,6 +21,16 @@
      }
  });
 
+
+// //scroll-open effect
+// $(window).on("scroll touchmove", function () {
+//     if ($('.contain-to-grid').toggleClass('fixed', $(document).scrollTop() > 1869)) {
+//         $(".scroll-open").show()
+//     }
+//     else {
+//         $(".scroll-open").hide()
+//     }
+// });
 
 
 

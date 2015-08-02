@@ -4975,8 +4975,13 @@ th.hide-for-touch {
     display: none !important;
   }
 }
-.contacts-sprite, .contact-box li:nth-child(1) a::before, .contact-box li:nth-child(1) a:hover::before, .contact-box li:nth-child(2) a::before, .contact-box li:nth-child(2) a:hover::before {
-  background-image: url('../../images/contacts-sa3bb67a8c7.png');
+.contacts-sprite, .contact-box li:nth-child(1) a::before, .contact-box li:nth-child(2) a::before {
+  background-image: url('../../images/contacts-sbf9411fd17.png');
+  background-repeat: no-repeat;
+}
+
+.contacts-hover-sprite, .contact-box li:nth-child(1) a:hover::before, .contact-box li:nth-child(2) a:hover::before {
+  background-image: url('../../images/contacts-hover-sf191d5b163.png');
   background-repeat: no-repeat;
 }
 
@@ -5014,16 +5019,6 @@ th.hide-for-touch {
   border: 1px solid #000000;
   font-weight: 400;
   color: #000000;
-}
-.buton.black:hover, .buton.black:active {
-  border-color: transparent;
-  color: #ffffff;
-}
-.buton.black:hover {
-  background-color: #7fbcd7;
-}
-.buton.black:active {
-  background-color: #538da7;
 }
 .buton.white {
   border: 2px solid #ffffff;
@@ -5157,6 +5152,11 @@ header .buton.white:active {
   -moz-box-shadow: 0px 3px 3px #f0f6f9;
   -webkit-box-shadow: 0px 3px 3px #f0f6f9;
   box-shadow: 0px 3px 3px #f0f6f9;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .scroll-open a {
   display: block;
@@ -5220,6 +5220,16 @@ header .buton.white:active {
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
   }
+}
+.figure-wrapper:hover .buton {
+  border-color: transparent;
+  background-color: #7fbcd7;
+  color: #ffffff;
+}
+.figure-wrapper:hover .buton:active {
+  border-color: transparent;
+  background-color: #538da7;
+  color: #ffffff;
 }
 .figure-wrapper::before, .figure-wrapper::after {
   content: "";
@@ -5305,10 +5315,10 @@ header .buton.white:active {
   -o-transition-property: color;
   -webkit-transition-property: color;
   transition-property: color;
-  -moz-transition-duration: 200ms;
-  -o-transition-duration: 200ms;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
 }
 .contact-box li a:hover {
   color: #9fe1ff;
@@ -5319,18 +5329,26 @@ header .buton.white:active {
   left: -34px;
   width: 22px;
   height: 22px;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
 }
 .contact-box li:nth-child(1) a::before {
   background-position: 0 0;
 }
 .contact-box li:nth-child(1) a:hover::before {
-  background-position: 0 -22px;
+  background-position: 0 0;
 }
 .contact-box li:nth-child(2) a::before {
-  background-position: 0 -44px;
+  background-position: 0 -22px;
 }
 .contact-box li:nth-child(2) a:hover::before {
-  background-position: 0 -66px;
+  background-position: 0 -22px;
 }
 
 .home .services {
@@ -5577,6 +5595,11 @@ header .buton.white:active {
   background-size: cover;
   background-position: center;
 }
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  .home .contact {
+    padding-top: 50px;
+  }
+}
 @media only screen and (max-width: 40em) {
   .home .contact {
     padding-top: 45px;
@@ -5669,6 +5692,11 @@ header .buton.white:active {
   -khtml-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  .home .contact .footer {
+    padding-top: 150px;
+  }
 }
 @media only screen and (max-width: 40em) {
   .home .contact .footer {

@@ -7,6 +7,19 @@
             }
         }
     }
+    &:hover {
+        .buton {
+            border-color: transparent;
+            background-color: #7fbcd7;
+            color: #ffffff;
+
+            &:active {
+                border-color: transparent;
+                background-color: #538da7;
+                color: #ffffff;
+            }
+        }
+    }
 
     &::before, &::after {
         content: "";
