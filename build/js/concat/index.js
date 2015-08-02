@@ -1424,7 +1424,18 @@ sticky_class:"sticky",custom_back_text:!0,back_text:"Back",mobile_show_parent_li
              close_on_click: true
          }
      });
+
+     $('#open-graphic').on('click', function (e) {
+         e.preventDefault();
+         $('#graphic [data-clearing] li img').first().trigger('click');
+     });
+     $('#open-web').on('click', function (e) {
+         e.preventDefault();
+         $('#web [data-clearing] li img').first().trigger('click');
+     });
+
  });
+
 
 
 //scroll-open effect

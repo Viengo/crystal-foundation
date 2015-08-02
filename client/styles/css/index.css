@@ -5148,7 +5148,6 @@ header .buton.white:active {
 .scroll-open {
   z-index: 1;
   display: none;
-  padding-top: 22px;
   -moz-box-shadow: 0px 3px 3px #f0f6f9;
   -webkit-box-shadow: 0px 3px 3px #f0f6f9;
   box-shadow: 0px 3px 3px #f0f6f9;
@@ -5158,26 +5157,29 @@ header .buton.white:active {
   -ms-user-select: none;
   user-select: none;
 }
-.scroll-open a {
+.scroll-open nav {
+  padding-top: 22px;
+}
+.scroll-open nav a {
   display: block;
 }
-.scroll-open a.buton {
+.scroll-open nav a.buton {
   float: right;
 }
-.scroll-open img {
+.scroll-open nav img {
   vertical-align: top;
 }
-.scroll-open ul {
+.scroll-open nav dl {
   margin: 0;
   padding-top: 14px;
   font-size: 0;
 }
-.scroll-open ul li {
+.scroll-open nav dl dd {
   position: relative;
   display: inline-block;
   width: 20%;
 }
-.scroll-open ul li::before {
+.scroll-open nav dl dd::before {
   content: "";
   position: absolute;
   top: 41px;
@@ -5194,14 +5196,14 @@ header .buton.white:active {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-.scroll-open ul li:hover::before {
+.scroll-open nav dl dd:hover::before, .scroll-open nav dl dd.active::before {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-.scroll-open ul li:first-child {
+.scroll-open nav dl dd:first-child {
   margin-left: 0;
 }
-.scroll-open ul li a {
+.scroll-open nav dl dd a {
   display: block;
   padding: 0;
   font-family: "Tunga";

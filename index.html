@@ -50,18 +50,18 @@
     </div>
     <a class="buton white show-for-small" href="#feedback">get in touch</a>
     <div class="contain-to-grid scroll-open">
-    <nav class="top-bar show-for-medium-up">
+    <nav class="show-for-medium-up" data-magellan-expedition="fixed">
         <div class="row">
             <div class="medium-3 large-3 columns">
                 <a href="#"><img src="client/images/logo/home-logo.png" alt=""/></a>
             </div>
-            <ul class="medium-9 large-6 columns">
-                <li><a href="#">Home</a></li>
-                <li><a href="#service">Services</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <dl class="medium-9 large-6 columns sub-nav">
+                <dd data-magellan-arrival="home"><a href="#">Home</a></dd>
+                <dd data-magellan-arrival="service"><a href="#service">Services</a></dd>
+                <dd data-magellan-arrival="work"><a href="#work">Work</a></dd>
+                <dd data-magellan-arrival="about"><a href="#about">About</a></dd>
+                <dd data-magellan-arrival="contact"><a href="#contact">Contact</a></dd>
+            </dl>
             <div class="large-3 columns clearfix show-for-large-up">
                 <a class="buton orange" href="#feedback">get in touch</a>
             </div>
@@ -70,7 +70,7 @@
 </div>
 </header>
         <main>
-            <section class="services" id="service">
+            <section data-magellan-destination="service" class="services" id="service">
     <h2>Services</h2>
         <div class="row">
             <div class="small-12 medium-10 large-3 columns service-items">
@@ -136,9 +136,9 @@
         </div>
     </div>
 </section>
-            <section class="work" id="work">
+            <section  data-magellan-destination="work" class="work" id="work">
     <div class="row">
-        <div class="small-12 medium-8 large-6 columns solutions">
+        <div id="graphic" class="small-12 medium-8 large-6 columns solutions">
             <h2>Graphic Solutions</h2>
             <p>Aliquam eu urna eu magna pellentesque auctor. Nullam facilisis tellus ut orci dapibus semper. Ut lacinia mi fermentum lorem laoreet, imperdiet congue ipsum porttitor. Etiam ultricies turpis metus, ac venenatis risus accumsan.</p>
 
@@ -148,9 +148,9 @@
                 <li class="small-4 columns"><a href="client/images/slide/graphic-3.jpg"><img src="client/images/slide/graphic-3.jpg"></a></li>
             </ul>
 
-            <a class="buton white" href="javascript:void(0)">view all work</a>
+            <a id="open-graphic" class="buton white" href="#">view all work</a>
         </div>
-        <div class="small-12 medium-8 large-6 columns solutions">
+        <div id="web" class="small-12 medium-8 large-6 columns solutions">
             <h2>Web Solutions</h2>
             <p>Aliquam eu urna eu magna pellentesque auctor. Nullam facilisis tellus ut orci dapibus semper. Ut lacinia mi fermentum lorem laoreet, imperdiet congue ipsum porttitor. Etiam ultricies turpis metus, ac venenatis risus accumsan.</p>
 
@@ -160,11 +160,11 @@
                 <li class="small-4 columns"><a href="client/images/slide/crystal-big.jpg"><img src="client/images/slide/crystal.jpg"></a></li>
             </ul>
 
-            <a class="buton white" href="javascript:void(0)">view all work</a>
+            <a id="open-web" class="buton white" href="#">view all work</a>
         </div>
     </div>
 </section>
-            <section class="about" id="about">
+            <section  data-magellan-destination="about" class="about" id="about">
     <h3>About</h3>
     <p>We are a young team that has great start in web indusry.
         We’re not afraid to use new technologies and than embed it in projects.
@@ -173,7 +173,7 @@
     <p>Our process implicates involvement QA engineers, which allows us to demonstrate good quality.
         Managers at UI Crystal respond you 24/7 and tech lead organizes work on the project.</p>
 </section>
-            <section class="contact" id="contact">
+            <section  data-magellan-destination="contact" class="contact" id="contact">
     <h3>contact us</h3>
     <ul class="contact-box clearfix">
         <li><a href="mailto:uicrystal@ui.com?subject=Contact">uicrystal@ui.com</a></li>
