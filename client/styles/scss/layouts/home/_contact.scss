@@ -76,6 +76,7 @@
             margin-top: 5px;
             font-family: "Roboto";
             text-transform: uppercase;
+            @include user-select(none);
         }
 
         small {

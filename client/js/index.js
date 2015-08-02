@@ -8,11 +8,11 @@
          }
      });
 
-     $('#open-graphic').on('click', function (e) {
+     $('#graphic .buton').on('click', function (e) {
          e.preventDefault();
          $('#graphic [data-clearing] li img').first().trigger('click');
      });
-     $('#open-web').on('click', function (e) {
+     $('#web .buton').on('click', function (e) {
          e.preventDefault();
          $('#web [data-clearing] li img').first().trigger('click');
      });

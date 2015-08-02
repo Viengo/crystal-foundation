@@ -14,3 +14,6 @@
         }
     }
 }
+.nav-list {
+    @include user-select(none);
+}
