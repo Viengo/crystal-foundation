@@ -15,7 +15,7 @@
   ],
   "dependencies": {
     "jquery": "~2.1.4",
-    "parallax.js": "https://github.com/pixelcog/parallax.js.git#~1.3.2",
-    "foundation": "zurb/bower-foundation#~5.5.2"
+    "foundation": "zurb/bower-foundation#~5.5.2",
+    "parallax.js": "https://github.com/pixelcog/parallax.js.git#~1.3.2"
   }
 }

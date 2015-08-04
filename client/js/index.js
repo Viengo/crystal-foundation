@@ -8,6 +8,12 @@
          }
      });
 
+  //Parallax scroll effect settings
+     $(document).parallax({
+         naturalWidth: 1920,
+         speed: 0.1
+     });
+
      $('#graphic .buton').on('click', function (e) {
          e.preventDefault();
          $('#graphic [data-clearing] li img').first().trigger('click');
@@ -31,32 +37,4 @@
          $(".scroll-open").hide()
      }
  });
-
-
-// //scroll-open effect
-// $(window).on("scroll touchmove", function () {
-//     if ($('.contain-to-grid').toggleClass('fixed', $(document).scrollTop() > 1869)) {
-//         $(".scroll-open").show()
-//     }
-//     else {
-//         $(".scroll-open").hide()
-//     }
-// });
-
-
-
-// $(window).on("scroll", function () {
-//     if ($(this).scrollTop() > 869) { //Any number you want
-//         $(".scroll-open").show()
-//     }
-//     else {
-//         $(".scroll-open").hide()
-//     }
-// });
-
- // $(window).on("scroll touchmove", function () {
- //     $('.contain-to-grid').toggleClass('fixed', $(document).scrollTop() > 869);
- //     $(".scroll-open").show()
- //
- // });
 

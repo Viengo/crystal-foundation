@@ -5074,10 +5074,6 @@ th.hide-for-touch {
 header {
   position: relative;
   padding: 175px 0 520px;
-  background-image: url("../../images/backgrounds/header-back.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   -webkit-user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -5476,10 +5472,6 @@ header .buton.white:active {
 }
 .home .work {
   padding: 190px 0 110px;
-  background-image: url("../../images/backgrounds/work-back.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 @media only screen and (max-width: 40em) {
   .home .work {
@@ -5600,10 +5592,6 @@ header .buton.white:active {
 }
 .home .contact {
   padding: 150px 15px 60px;
-  background-image: url("../../images/backgrounds/contact-back.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
   .home .contact {
