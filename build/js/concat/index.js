@@ -1450,14 +1450,14 @@ sticky_class:"sticky",custom_back_text:!0,back_text:"Back",mobile_show_parent_li
 
 
 
-//scroll-open effect
- $(window).on("scroll touchmove", function () {
-     if ( $(document).scrollTop() > 869) {
-         $('.contain-to-grid').addClass('fixed');
-         $(".scroll-open").show()
-     }
-     else {
-         $(".scroll-open").hide()
-     }
- });
-
+////scroll-open effect
+//$(window).on("scroll touchmove", function () {
+//     if ( $(document).scrollTop() > 869) {
+//         $('.contain-to-grid').addClass('fixed');
+//         $(".scroll-open").show()
+//     }
+//     else {
+//         $(".scroll-open").hide()
+//     }
+//});
+//
