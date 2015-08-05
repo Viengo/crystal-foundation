@@ -5151,6 +5151,7 @@ header .buton.white:active {
 
 .scroll-open {
   z-index: 10;
+  background-color: #ffffff;
   -moz-box-shadow: 0px 3px 3px #f0f6f9;
   -webkit-box-shadow: 0px 3px 3px #f0f6f9;
   box-shadow: 0px 3px 3px #f0f6f9;
@@ -5630,7 +5631,7 @@ header .buton.white:active {
   margin-left: 35px;
 }
 .home .contact .contact-box li:nth-child(2) {
-  margin-left: 78px;
+  margin-left: 75px;
 }
 .home .contact form {
   margin-top: 30px;

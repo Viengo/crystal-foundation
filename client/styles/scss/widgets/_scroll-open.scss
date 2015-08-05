@@ -1,5 +1,6 @@
 .scroll-open {
     z-index: 10;
+    background-color: #ffffff;
     @include box-shadow(0px 3px 3px rgba(#f0f6f9, 1));
     @include user-select(none);
 

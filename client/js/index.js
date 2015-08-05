@@ -8,6 +8,9 @@
          }
      });
 
+  // Slow scroll to anchor
+     smoothScroll.init();
+
   //Parallax scroll effect settings
      $(document).parallax({
          naturalWidth: 1920,
@@ -24,7 +27,6 @@
      });
 
  });
-
 
 
 ////scroll-open effect
