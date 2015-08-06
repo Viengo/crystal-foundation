@@ -1,42 +1,52 @@
+$(document).on('ready', function () {
+    $(document).foundation({
+        offcanvas: {
+            close_on_click: true
+        }
+    });
 
- //foundation settings
+    // Slow scroll to anchor
+    smoothScroll.init();
 
- $(document).on('ready', function () {
-     $(document).foundation({
-         offcanvas: {
-             close_on_click: true
-         }
-     });
+    //Parallax scroll effect settings
+    $(document).parallax({
+        naturalWidth: 1920,
+        speed: 0.1
+    });
 
-  // Slow scroll to anchor
-     smoothScroll.init();
+    $('#graphic .buton').on('click', function (e) {
+        e.preventDefault();
+        $('#graphic [data-clearing] li img').first().trigger('click');
+    });
+    $('#web .buton').on('click', function (e) {
+        e.preventDefault();
+        $('#web [data-clearing] li img').first().trigger('click');
+    });
 
-  //Parallax scroll effect settings
-     $(document).parallax({
-         naturalWidth: 1920,
-         speed: 0.1
-     });
+    $('#feedback').on('valid.fndtn.abide', function (e) {
+        var form = $(e.target),
+            formData = form.serialize();
 
-     $('#graphic .buton').on('click', function (e) {
-         e.preventDefault();
-         $('#graphic [data-clearing] li img').first().trigger('click');
-     });
-     $('#web .buton').on('click', function (e) {
-         e.preventDefault();
-         $('#web [data-clearing] li img').first().trigger('click');
-     });
+        $.ajax({
+            url: 'mailer.php',
+            type: "POST",
+            data: formData,
+            success: function (responce) {
+                responce = JSON.parse(responce);
 
- });
-
-
-////scroll-open effect
-//$(window).on("scroll touchmove", function () {
-//     if ( $(document).scrollTop() > 869) {
-//         $('.contain-to-grid').addClass('fixed');
-//         $(".scroll-open").show()
-//     }
-//     else {
-//         $(".scroll-open").hide()
-//     }
-//});
-//
+                if (responce.status == 'ok') {
+                    form.trigger('reset');
+                    // modal ok
+                    // Your message sent. We contact with you soon.
+                } else {
+                    // modal false
+                    // Sorry something wrong! Please contact us via email.
+                }
+            },
+            fail: function () {
+                // modal false
+                // Sorry something wrong! Please contact us via email.
+            }
+        });
+    });
+});
