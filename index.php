@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="client/styles/css/index.css">
     <!--<link rel="shortcut icon" href="client/images/icons/favicon.ico">-->
-    <script src="build/js/index.min.js"></script>
+    <script src="build/js/concat/index.js"></script>
 </head>
 <body class="home">
 <div class="off-canvas-wrap" data-offcanvas>
@@ -173,12 +173,12 @@
 
                         <ul class="clearing-thumbs slide-examples row collapse" data-clearing>
                             <li class="small-4 columns"><a href="client/images/slide/graphic-1.jpg"><img
-                                    src="client/images/slide/graphic-1.jpg"></a></li>
+                                        src="client/images/slide/graphic-1.jpg"></a></li>
                             <li class="clearing-featured-img small-4 columns"><a
                                     href="client/images/slide/graphic-2.jpg"><img
-                                    src="client/images/slide/graphic-2.jpg"></a></li>
+                                        src="client/images/slide/graphic-2.jpg"></a></li>
                             <li class="small-4 columns"><a href="client/images/slide/graphic-3.jpg"><img
-                                    src="client/images/slide/graphic-3.jpg"></a></li>
+                                        src="client/images/slide/graphic-3.jpg"></a></li>
                         </ul>
 
                         <a class="buton white" href="#">view all work</a>
@@ -194,12 +194,12 @@
 
                         <ul class="clearing-thumbs slide-examples row collapse" data-clearing>
                             <li class="small-4 columns"><a href="client/images/slide/breakfasty-big.jpg"><img
-                                    src="client/images/slide/breakfasty.jpg"></a></li>
+                                        src="client/images/slide/breakfasty.jpg"></a></li>
                             <li class="clearing-featured-img small-4 columns"><a
                                     href="client/images/slide/shanti.jpg"><img
-                                    src="client/images/slide/shanti.jpg"></a></li>
+                                        src="client/images/slide/shanti.jpg"></a></li>
                             <li class="small-4 columns"><a href="client/images/slide/crystal-big.jpg"><img
-                                    src="client/images/slide/crystal.jpg"></a></li>
+                                        src="client/images/slide/crystal.jpg"></a></li>
                         </ul>
 
                         <a class="buton white" href="#">view all work</a>
@@ -238,28 +238,28 @@
                 </div>
 
                 <form data-abide="ajax" action="/" method="post" id="feedback" class="row">
-                    <textarea placeholder="Please tell us about your project" required></textarea>
+                    <textarea placeholder="Please tell us about your project" name="contactUs[message]" required></textarea>
 
                     <div class="row">
                         <div class="small-12 medium-12 large-3 columns">
-                            <input type="text"/>
+                            <input type="text" name="contactUs[name]" />
                             <label>your name</label>
                             <small class="error">mistake: please check your information.</small>
                         </div>
                         <div class="small-12 medium-12 large-3 columns">
-                            <input type="email" required/>
+                            <input type="email" name="contactUs[email]" required/>
 
                             <label>e-mail*</label>
                             <small class="error">mistake: please check your information.</small>
                         </div>
                         <div class="small-12 medium-12 large-3 columns">
-                            <input type="text"/>
+                            <input type="text" name="contactUs[skype]"/>
 
                             <label>skype</label>
                             <small class="error">mistake: please check your information.</small>
                         </div>
                         <div class="small-12 medium-3 large-3 columns clearfix">
-                            <button class="buton orange">get in touch</button>
+                            <button type="submit" class="buton orange">get in touch</button>
                         </div>
                     </div>
                 </form>
@@ -275,31 +275,3 @@
 </div>
 </body>
 </html>
-<?php
-
-require_once '/home/alex/projects/PON/Swift/lib/swift_required.php';
-
-// Create the Transport
-$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')
-  ->setUsername('alexandr.sokolovskiy@iqria.com')
-->setPassword('temp123456');
-
-// Create the Mailer using your created Transport
-$mailer = Swift_Mailer::newInstance($transport);
-
-// Create a message
-$message = Swift_Message::newInstance('Registration PON')
-->setFrom(array('alexandr.sokolovskiy@iqria.com' => 'PON'))
-->setTo(array($mail => $name))
-->setBody('Here is the message it self');
-
-// Send the message
-$result = $mailer->send($message);
-if ($mailer->send($message))
-{
-echo "To your e-mail will be sent. Follow the enclosed instructions.\n";
-}else{
-echo "Registration Failed. Please try again later.\n";
-}
-
-?>
