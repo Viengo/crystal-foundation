@@ -1932,23 +1932,28 @@ $(document).on('ready', function () {
     });
 
     $('#feedback').on('valid.fndtn.abide', function (e) {
-        var formData = $(e.target).serialize();
-console.log(1);
+        var form = $(e.target),
+            formData = form.serialize();
 
         $.ajax({
             url: 'mailer.php',
             type: "POST",
             data: formData,
             success: function (responce) {
-                console.log(responce);
+                responce = JSON.parse(responce);
+
                 if (responce.status == 'ok') {
+                    form.trigger('reset');
                     // modal ok
+                    // Your message sent. We contact with you soon.
                 } else {
                     // modal false
+                    // Sorry something wrong! Please contact us via email.
                 }
             },
             fail: function () {
                 // modal false
+                // Sorry something wrong! Please contact us via email.
             }
         });
     });

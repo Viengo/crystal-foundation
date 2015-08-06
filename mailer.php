@@ -37,19 +37,13 @@ function writeDataToFile($fileName, $text)
 
 $contactFormData = $_POST['contactUs'];
 
-var_dump($contactFormData);
 if (!empty($contactFormData)) {
     writeDataToFile('emailList.txt', $contactFormData['email']. ' ' . $contactFormData['skype']);
     if (sentMail('uicrystalinfo@gmail.com', 'eg3s22dA', $contactFormData)) {
-
-        return [
-            'status' => 'ok'
-        ];
+        $responce = ['status' => 'ok'];
     } else {
-
-        return [
-            'status' => 'fail'
-        ];
+        $responce = ['status' => 'fail'];
     }
+    echo json_encode($responce);
 }
 exit();
