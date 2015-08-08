@@ -8,10 +8,11 @@ $(document).on('ready', function () {
         }
     });
 
+
     // Slow scroll to anchor
     smoothScroll.init();
 
-   // Parallax scroll effect settings
+    // Parallax scroll effect settings
 
     $myParaxify = paraxify('.paraxify');
 
@@ -39,14 +40,18 @@ $(document).on('ready', function () {
 
                 if (responce.status == 'ok') {
                     form.trigger('reset');
+                    $('#ok').foundation('reveal', 'open');
                     // modal ok
                     // Your message sent. We contact with you soon.
                 } else {
+                    $('#fail').foundation('reveal', 'open');
+
                     // modal false
                     // Sorry something wrong! Please contact us via email.
                 }
             },
             fail: function () {
+                $('#fail').foundation('reveal', 'open');
                 // modal false
                 // Sorry something wrong! Please contact us via email.
             }
