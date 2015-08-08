@@ -2,17 +2,20 @@ $(document).on('ready', function () {
     $(document).foundation({
         offcanvas: {
             close_on_click: true
+        },
+        topbar: {
+            scrolltop: false // jump to top when sticky nav menu toggle is clicked
         }
     });
 
     // Slow scroll to anchor
     smoothScroll.init();
 
-    //Parallax scroll effect settings
-    $(document).parallax({
-        naturalWidth: 1920,
-        speed: 0.1
-    });
+   // Parallax scroll effect settings
+
+    $myParaxify = paraxify('.paraxify');
+
+    // Clearing open
 
     $('#graphic .buton').on('click', function (e) {
         e.preventDefault();

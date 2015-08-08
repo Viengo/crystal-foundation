@@ -1,0 +1,13 @@
+footer {
+    position: absolute;
+    bottom: 65px;
+    width: 100%;
+    @include user-select(none);
+
+    p {
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+}

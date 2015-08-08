@@ -1,14 +1,14 @@
 .contact {
-    padding: 150px 15px 60px;
-//    background-image: url("../../images/backgrounds/contact-back.jpg");
+    padding: 150px 15px 360px;
+    background-image: url("../../images/backgrounds/contact-back.jpg");
 //    background-repeat: no-repeat;
 //    background-size: cover;
 //    background-position: center;
     @media #{$medium-only}{
-        padding-top: 50px;
+        padding: 50px 15px 210px;
     }
     @media #{$small-only}{
-        padding-top: 45px;
+        padding: 45px 15px 160px;
     }
 
     h3 {
@@ -70,6 +70,13 @@
             background: transparent;
             text-align: center;
             @include box-shadow(none);
+            @media #{$small-only}{
+                width: 100%;
+            }
+            & + p {
+                margin-top: 5px;
+                text-transform: uppercase;
+            }
         }
 
         label {
@@ -92,23 +99,6 @@
             @media #{$small-only}{
                 margin-top: 30px;
             }
-        }
-    }
-
-    .footer {
-        padding-top: 350px;
-        @include user-select(none);
-        @media #{$medium-only}{
-            padding-top: 150px;
-        }
-        @media #{$small-only}{
-            padding-top: 100px;
-        }
-
-        p {
-            margin: 0;
-            text-align: center;
-            text-transform: uppercase;
         }
     }
 }

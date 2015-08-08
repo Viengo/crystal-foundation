@@ -3,7 +3,6 @@
 @import "compass/css3";
 @import "compass/utilities/sprites";
 @import "foundation";
-//@import "foundation/settings";
 
 
 //@import "base";
@@ -20,6 +19,7 @@
 @import "fonts/tunga";
 
 //components
+@import "components/paraxify";
 @import "components/button";
 @import "components/menu";
 
@@ -29,6 +29,7 @@
 @import "widgets/scroll-open";
 @import "widgets/service-item";
 @import "widgets/contact-box";
+@import "widgets/footer";
 
 //layouts
 @import "layouts/home";
