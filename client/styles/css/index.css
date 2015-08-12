@@ -3204,27 +3204,6 @@ label.error {
   }
 }
 
-/* line 53, ../../../bower_components/foundation/scss/foundation/components/_inline-lists.scss */
-.inline-list {
-  list-style: none;
-  margin-left: -1.375rem;
-  margin-right: 0;
-  margin: 0 auto 1.0625rem auto;
-  overflow: hidden;
-  padding: 0;
-}
-/* line 42, ../../../bower_components/foundation/scss/foundation/components/_inline-lists.scss */
-.inline-list > li {
-  display: block;
-  float: left;
-  list-style: none;
-  margin-left: 1.375rem;
-}
-/* line 47, ../../../bower_components/foundation/scss/foundation/components/_inline-lists.scss */
-.inline-list > li > * {
-  display: block;
-}
-
 /* line 169, ../../../bower_components/foundation/scss/foundation/components/_reveal.scss */
 .reveal-modal-bg {
   background: #000000;
@@ -6208,18 +6187,18 @@ footer p {
 }
 /* line 1, ../scss/layouts/home/_contact.scss */
 .home .contact {
-  padding: 150px 15px 360px;
+  padding: 150px 0 360px;
 }
 @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
   /* line 1, ../scss/layouts/home/_contact.scss */
   .home .contact {
-    padding: 50px 15px 210px;
+    padding: 50px 0 210px;
   }
 }
 @media only screen and (max-width: 40em) {
   /* line 1, ../scss/layouts/home/_contact.scss */
   .home .contact {
-    padding: 45px 15px 160px;
+    padding: 45px 0 160px;
   }
 }
 /* line 14, ../scss/layouts/home/_contact.scss */
@@ -6261,11 +6240,12 @@ footer p {
 }
 /* line 47, ../scss/layouts/home/_contact.scss */
 .home .contact form {
-  margin-top: 30px;
+  max-width: 1170px;
+  margin: 30px auto 0;
+  padding: 0 15px;
 }
-/* line 50, ../scss/layouts/home/_contact.scss */
+/* line 52, ../scss/layouts/home/_contact.scss */
 .home .contact form textarea {
-  max-width: 1140px;
   width: 100%;
   height: 167px;
   margin: 0 auto;
@@ -6274,11 +6254,11 @@ footer p {
   border: 1px solid #5f6c72;
   background-color: rgba(255, 255, 255, 0.1);
 }
-/* line 60, ../scss/layouts/home/_contact.scss */
+/* line 61, ../scss/layouts/home/_contact.scss */
 .home .contact form textarea:hover {
   border-color: #d0d6d8;
 }
-/* line 65, ../scss/layouts/home/_contact.scss */
+/* line 66, ../scss/layouts/home/_contact.scss */
 .home .contact form input {
   width: 225px;
   margin: 17px 0 0;
@@ -6294,17 +6274,17 @@ footer p {
   box-shadow: none;
 }
 @media only screen and (max-width: 40em) {
-  /* line 65, ../scss/layouts/home/_contact.scss */
+  /* line 66, ../scss/layouts/home/_contact.scss */
   .home .contact form input {
     width: 100%;
   }
 }
-/* line 79, ../scss/layouts/home/_contact.scss */
+/* line 80, ../scss/layouts/home/_contact.scss */
 .home .contact form input + p {
   margin-top: 5px;
   text-transform: uppercase;
 }
-/* line 85, ../scss/layouts/home/_contact.scss */
+/* line 86, ../scss/layouts/home/_contact.scss */
 .home .contact form label {
   margin-top: 5px;
   font-family: "Roboto";
@@ -6315,23 +6295,23 @@ footer p {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 92, ../scss/layouts/home/_contact.scss */
+/* line 93, ../scss/layouts/home/_contact.scss */
 .home .contact form small {
   text-transform: uppercase;
 }
-/* line 96, ../scss/layouts/home/_contact.scss */
+/* line 97, ../scss/layouts/home/_contact.scss */
 .home .contact form .buton {
   margin: 40px 0 0 0;
   padding: 0;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 96, ../scss/layouts/home/_contact.scss */
+  /* line 97, ../scss/layouts/home/_contact.scss */
   .home .contact form .buton {
     float: right;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 96, ../scss/layouts/home/_contact.scss */
+  /* line 97, ../scss/layouts/home/_contact.scss */
   .home .contact form .buton {
     margin-top: 30px;
   }
