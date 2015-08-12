@@ -1,0 +1,14 @@
+{
+  "name": "laxicon",
+  "homepage": "https://github.com/JSDesign/laxicon",
+  "_release": "1b17a0b2ca",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "1b17a0b2caa5a145a040d7e98e6e3f41c16c1475"
+  },
+  "_source": "https://github.com/JSDesign/laxicon.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/JSDesign/laxicon.git",
+  "_direct": true
+}

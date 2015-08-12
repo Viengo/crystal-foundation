@@ -17,6 +17,6 @@
     "jquery": "~2.1.4",
     "foundation": "zurb/bower-foundation#~5.5.2",
     "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#~7.0.2",
-    "Paraxify.js": "https://github.com/jaicab/Paraxify.js.git"
+    "laxicon": "https://github.com/JSDesign/laxicon.git"
   }
 }

@@ -15,7 +15,7 @@ module.exports = function (grunt) {
                 'bower_components/modernizr/modernizr.js',
                 'bower_components/foundation/js/foundation.min.js',
                 'bower_components/smooth-scroll/dist/js/smooth-scroll.js',
-                'bower_components/Paraxify.js/paraxify.js',
+                'bower_components/laxicon/laxicon.js',
                 'client/js/index.js'
                 ],
                 dest: 'build/js/concat/index.js'

@@ -5,6 +5,10 @@ $(document).on('ready', function () {
         },
         topbar: {
             scrolltop: false // jump to top when sticky nav menu toggle is clicked
+        },
+        "magellan-expedition": {
+            destination_threshold: 0 // pixels from the top of destination for it to be considered active
+
         }
     });
 
@@ -14,7 +18,15 @@ $(document).on('ready', function () {
 
     // Parallax scroll effect settings
 
-    $myParaxify = paraxify('.paraxify');
+    $('.parallax').laxicon({
+        bgImgPath: 'client/images/backgrounds/header-back.jpg'
+    });
+    $('.parallax-1').laxicon({
+        bgImgPath: 'client/images/backgrounds/work-back.jpg'
+    });
+    $('.parallax-2').laxicon({
+        bgImgPath: 'client/images/backgrounds/contact-back.jpg'
+    });
 
     // Clearing open
 

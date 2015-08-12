@@ -4,64 +4,64 @@
     @include box-shadow(0px 3px 3px rgba(#000, 0.2));
     @include user-select(none);
 
-    nav{
+    nav {
         padding-top: 22px;
 
-    a {
-        display: block;
+        a {
+            display: block;
 
-        &.buton {
-            float: right;
-        }
-    }
-
-    img {
-        height: 38px;
-        vertical-align: top;
-    }
-
-    dl {
-        margin: 0;
-        padding-top: 14px;
-        font-size: 0;
-
-        dd {
-            position: relative;
-            display: inline-block;
-            width: 20%;
-
-            &::before {
-                content: "";
-                position: absolute;
-                top: 39px;
-                width: 100%;
-                border-bottom: 2px solid #7fbcd7;
-                @include opacity(0);
-                @include transition-property(opacity);
-                @include transition-duration(200ms);
+            &.buton {
+                float: right;
             }
+        }
 
-            &:hover, &.active {
+        img {
+            height: 38px;
+            vertical-align: top;
+        }
+
+        dl {
+            margin: 0;
+            padding-top: 14px;
+            font-size: 0;
+
+            dd {
+                position: relative;
+                display: inline-block;
+                width: 20%;
+
                 &::before {
-                    @include opacity(1);
+                    content: "";
+                    position: absolute;
+                    top: 39px;
+                    width: 100%;
+                    border-bottom: 2px solid #7fbcd7;
+                    @include opacity(0);
+                    @include transition-property(opacity);
+                    @include transition-duration(200ms);
+                }
+
+                &:hover, &.active {
+                    &::before {
+                        @include opacity(1);
+                    }
+                }
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                a {
+                    display: block;
+                    padding: 0;
+                    font-family: "Tunga";
+                    font-size: 18px;
+                    line-height: 29px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: #000000;
                 }
             }
-
-            &:first-child {
-                margin-left: 0;
-            }
-
-            a {
-                display: block;
-                padding: 0;
-                font-family: "Tunga";
-                font-size: 18px;
-                line-height: 29px;
-                text-transform: uppercase;
-                text-align: center;
-                color: #000000;
-            }
         }
-    }
     }
 }
