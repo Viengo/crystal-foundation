@@ -14,11 +14,16 @@ header {
     }
 
     .logo {
+        padding-top: 50px;
         text-align: center;
+        @media #{$large-up} {
+            padding-top: 0;
+        }
         @media #{$small-only} {
             float: none;
             margin: 0 auto;
         }
+
         img {
             width: 100%;
             @media #{$medium-up} {
@@ -41,10 +46,9 @@ header {
 
     nav {
         ul {
-            margin: 0 0 0 104px;
-
             li {
                 display: block;
+                margin-left: 135px;
 
                 a {
                     display: block;

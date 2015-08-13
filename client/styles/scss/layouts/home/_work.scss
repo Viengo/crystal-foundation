@@ -34,9 +34,12 @@
             @media #{$large-up}{
                 padding: 0 48px;
             }
+            @media #{$medium-only}{
+                padding: 0 38px;
+            }
             @media #{$small-only} {
                 margin-top: 15px;
-                padding: 0;
+                padding: 0 15px;
                 text-align: justify;
             }
         }
@@ -46,7 +49,7 @@
             text-align: center;
 
             li {
-               margin: 15px 0;
+               margin: 15px 0 0;
 
                 a {
                     display: block;
@@ -57,7 +60,9 @@
                         @include user-select(none);
                         @include transition-property(border-color);
                         @include transition-duration(200ms);
-
+                        @media #{$medium-only} {
+                            width: 90%;
+                        }
                         &:hover {
                             border-color: #ffffff;
                         }

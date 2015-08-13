@@ -21,10 +21,10 @@ $(document).on('ready', function () {
     $('.parallax').laxicon({
         bgImgPath: 'client/images/backgrounds/header-back.jpg'
     });
-    $('.parallax-1').laxicon({
+    $('.work').laxicon({
         bgImgPath: 'client/images/backgrounds/work-back.jpg'
     });
-    $('.parallax-2').laxicon({
+    $('.contact').laxicon({
         bgImgPath: 'client/images/backgrounds/contact-back.jpg'
     });
 

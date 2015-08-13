@@ -12,15 +12,26 @@
         margin: 0;
         font-family: "Tunga";
         font-size: 48px;
+        line-height: 40px;
         text-transform: uppercase;
         @include user-select(none);
     }
 
     p {
-        line-height: 30px;
+        margin-top: 5px;
+        line-height: 25px;
+        @media #{$medium-only}{
+            margin-top: 15px;
+        }
+        @media #{$small-only}{
+            margin-top: 20px;
+        }
 
         &:first-of-type {
-            margin-top: 30px;
+            margin-top: 45px;
+            @media #{$small-only}{
+                margin-top: 30px;
+            }
         }
     }
 }
