@@ -14,7 +14,15 @@ $(document).on('ready', function () {
 
 
     // Slow scroll to anchor
-    smoothScroll.init();
+    smoothScroll.init({
+        offset: 60
+    });
+
+    $('.nav-list a').on('click', function(){
+        smoothScroll.init({
+            offset: 45
+        })
+    });
 
     // Parallax scroll effect settings
 
