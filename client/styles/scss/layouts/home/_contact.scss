@@ -1,9 +1,10 @@
 .contact {
     padding: 150px 0 360px;
-//    background-image: url("../../images/backgrounds/contact-back.jpg");
-//    background-repeat: no-repeat;
-//    background-size: cover;
-//    background-position: center;
+    background-image: url("../../images/backgrounds/contact-back.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     @media #{$medium-only}{
         padding: 50px 0 210px;
     }
@@ -14,12 +15,15 @@
     h3 {
         margin: 0;
         font-family: "Tunga";
-        font-size: 48px;
+        font-size: 30px;
         line-height: 40px;
         text-transform: uppercase;
         text-align: center;
         color: #ffffff;
         @include user-select(none);
+        @media #{$large-up}{
+            font-size: 48px;
+        }
     }
 
     p {

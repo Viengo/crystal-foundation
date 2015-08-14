@@ -26,14 +26,10 @@ $(document).on('ready', function () {
 
     // Parallax scroll effect settings
 
-    $('.parallax').laxicon({
-        bgImgPath: 'client/images/backgrounds/header-back.jpg'
-    });
-    $('.work').laxicon({
-        bgImgPath: 'client/images/backgrounds/work-back.jpg'
-    });
-    $('.contact').laxicon({
-        bgImgPath: 'client/images/backgrounds/contact-back.jpg'
+    $.stellar({
+        verticalScrolling: true,
+        horizontalScrolling: false,
+        responsive: true
     });
 
     // Clearing open
@@ -46,6 +42,7 @@ $(document).on('ready', function () {
         e.preventDefault();
         $('#web [data-clearing] li img').first().trigger('click');
     });
+
 
     $('#feedback').on('valid.fndtn.abide', function (e) {
         var form = $(e.target),

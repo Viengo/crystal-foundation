@@ -11,10 +11,13 @@
     h3 {
         margin: 0;
         font-family: "Tunga";
-        font-size: 48px;
+        font-size: 30px;
         line-height: 40px;
         text-transform: uppercase;
         @include user-select(none);
+        @media #{$large-up}{
+            font-size: 48px;
+        }
     }
 
     p {

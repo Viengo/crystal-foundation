@@ -20,12 +20,12 @@ $reveal-overlay-bg-old: $black !default;
 $reveal-modal-bg: $white !default;
 $reveal-position-top: rem-calc(100) !default;
 $reveal-default-width: 80% !default;
-$reveal-max-width: $row-width !default;
-$reveal-modal-padding: rem-calc(30) !default;
+$reveal-max-width: rem-calc(340) !default;
+$reveal-modal-padding: rem-calc(40) !default;
 $reveal-box-shadow: 0 0 10px rgba($black,.4) !default;
 
 // We use these to style the reveal close button
-$reveal-close-font-size: rem-calc(40) !default;
+$reveal-close-font-size: rem-calc(35) !default;
 $reveal-close-top: rem-calc(10) !default;
 $reveal-close-side: rem-calc(22) !default;
 $reveal-close-color: $base !default;

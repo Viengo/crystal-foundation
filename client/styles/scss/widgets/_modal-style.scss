@@ -1,0 +1,18 @@
+.modal-style {
+    text-align: center;
+    @media #{$small-only}{
+        top: 100px;
+        height: auto;
+        min-height: 196px;
+    }
+
+    .buton {
+        margin: 20px auto 0;
+        background-color: #5fcaf2;
+        color: #ffffff;
+
+        &:hover {
+            background-color: #57B6DA;
+        }
+    }
+}

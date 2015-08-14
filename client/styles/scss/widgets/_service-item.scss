@@ -5,18 +5,16 @@
             &::before, &::after {
                 @include opacity(1);
             }
-        }
-    }
-    &:hover {
-        .buton {
-            border-color: transparent;
-            background-color: #7fbcd7;
-            color: #ffffff;
-
-            &:active {
+            .buton {
                 border-color: transparent;
-                background-color: #538da7;
+                background-color: #7fbcd7;
                 color: #ffffff;
+
+                &:active {
+                    border-color: transparent;
+                    background-color: #538da7;
+                    color: #ffffff;
+                }
             }
         }
     }

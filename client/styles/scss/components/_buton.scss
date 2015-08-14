@@ -19,6 +19,18 @@
         border: 1px solid #000000;
         font-weight: 400;
         color: #000000;
+
+        &:hover {
+            border-color: transparent;
+            background-color: #7fbcd7;
+            color: #ffffff;
+        }
+
+        &:active {
+            border-color: transparent;
+            background-color: #538da7;
+            color: #ffffff;
+        }
     }
 
     &.white {
@@ -42,7 +54,7 @@
         background-color: #de6c40;
         color: #ffffff;
 
-        &:hover{
+        &:hover {
             background-color: #f17645;
         }
 

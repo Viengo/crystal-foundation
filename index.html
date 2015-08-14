@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="client/styles/css/index.css">
-    <!--<link rel="shortcut icon" href="client/images/icons/favicon.ico">-->
+    <link rel="shortcut icon" href="client/images/icon.ico">
     <script src="build/js/index.min.js"></script>
 </head>
 <body class="home">
@@ -28,7 +28,7 @@
 
 </nav>
 </div>
-        <header class="parallax">
+        <header data-stellar-background-ratio="0.5" data-stellar-vertical-offset="50">
     <div class="row collapse">
         <div class="small-9 medium-6 medium-offset-3 large-6 large-offset-3 columns logo">
             <img src="client/images/logo/ui-logo.png" alt=""/>
@@ -44,7 +44,7 @@
             </ul>
         </nav>
     </div>
-    <a data-scroll class="buton white show-for-small" href="#feedback">get in touch</a>
+    <a data-scroll class="buton white hide-for-large-up" href="#contact">get in touch</a>
 
 </header>
         <div class="scroll-open" data-magellan-expedition="fixed">
@@ -61,7 +61,7 @@
                 <dd data-magellan-arrival="contact"><a href="#contact">Contact</a></dd>
             </dl>
             <div class="medium-3 columns clearfix">
-                <a data-scroll class="buton orange" href="#feedback">get in touch</a>
+                <a data-scroll class="buton orange" href="#contact">get in touch</a>
             </div>
         </div>
     </nav>
@@ -77,7 +77,7 @@
     <figcaption>
     <h3>web design</h3>
     <p>Want to make your idea live and to find out solutions for your business? Our designers ready to imbue your target for creation your best layout.</p>
-    <a data-scroll class="buton black" href="#feedback">request a quote</a>
+    <a data-scroll class="buton black" href="#contact">request a quote</a>
     </figcaption>
 </figure>
 </div>
@@ -87,7 +87,7 @@
     <figcaption>
     <h3>responsive landing page</h3>
     <p>Let us design your new landing page and make it responsive. We test heavily across devices, integrate analytics tools and focus on UX to improve convertation rates.</p>
-    <a data-scroll class="buton black" href="#feedback">request a quote</a>
+    <a data-scroll class="buton black" href="#contact">request a quote</a>
     </figcaption>
 </figure>
 </div>
@@ -102,7 +102,7 @@
     <figcaption>
     <h3>web services</h3>
     <p>We design, develop and test  ensuring world-class product quality. Our experience allows us to create quickly and reliably.</p>
-    <a data-scroll class="buton black" href="#feedback">request a quote</a>
+    <a data-scroll class="buton black" href="#contact">request a quote</a>
     </figcaption>
 </figure>
 </div>
@@ -112,7 +112,7 @@
     <figcaption>
     <h3>graphic design</h3>
     <p>Are you a business owner and would like to brighten it? For you we will create a logo, corporate identity and an infographic that emphasizes your individuality and allocates on the thematic market.</p>
-    <a data-scroll class="buton black" href="#feedback">request a quote</a>
+    <a data-scroll class="buton black" href="#contact">request a quote</a>
     </figcaption>
 </figure>
 </div>
@@ -126,14 +126,14 @@
     <figcaption>
     <h3>PSD to HTML</h3>
     <p>It's simple! You give us your design, and than recieve the valid, flexible, SEO-friendly layout created using leading technologies.</p>
-    <a data-scroll class="buton black" href="#feedback">request a quote</a>
+    <a data-scroll class="buton black" href="#contact">request a quote</a>
     </figcaption>
 </figure>
 </div>
         </div>
     </div>
 </section>
-            <section class="work" id="work" data-magellan-destination="work">
+            <section class="work" id="work" data-magellan-destination="work" data-stellar-background-ratio="0.5">
     <div class="row">
         <div id="graphic" class="small-12 medium-10 large-6 columns solutions">
             <h2>Graphic Solutions</h2>
@@ -170,7 +170,7 @@
     <p>Our process implicates involvement QA engineers, which allows us to demonstrate good quality.
         Managers at UI Crystal respond you 24/7 and tech lead organizes work on the project.</p>
 </section>
-            <section class="contact" id="contact" data-magellan-destination="contact">
+            <section class="contact" id="contact" data-magellan-destination="contact" data-stellar-background-ratio="0.5">
     <h3>contact us</h3>
     <ul class="contact-box clearfix">
         <li><a href="mailto:uicrystal@ui.com?subject=Contact">uicrystal@ui.com</a></li>
@@ -207,15 +207,6 @@
                 <button class="buton orange">get in touch</button>
             </div>
         </div>
-        <!--Modal Messages-->
-        <div id="ok" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
-            <p class="lead">Your message sent. We contact with you soon.</p>
-            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-        </div>
-        <div id="fail" data-reveal-ajax="true" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
-            <p class="lead">Sorry something wrong! Please contact us via email.</p>
-            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-        </div>
     </form>
 
 </section>
@@ -226,5 +217,16 @@
 
             <p>all rights reserved</p>
         </footer>
+        <!--Modal Messages-->
+<div id="ok" data-reveal-ajax="true" class="reveal-modal modal-style" data-reveal aria-hidden="true" role="dialog">
+    <p class="lead">Your message sent. We contact with you soon.</p>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    <a aria-label="Close" class="buton" href="javascript:void(0)">ok</a>
+</div>
+<div id="fail" data-reveal-ajax="true" class="reveal-modal modal-style" data-reveal aria-hidden="true" role="dialog">
+    <p class="lead">Sorry something wrong! Please contact us via email.</p>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    <a aria-label="Close" class="buton" href="javascript:void(0)">ok</a>
+</div>
 </body>
 </html>

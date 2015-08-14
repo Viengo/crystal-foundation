@@ -17,6 +17,6 @@
     "jquery": "~2.1.4",
     "foundation": "zurb/bower-foundation#~5.5.2",
     "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#~7.0.2",
-    "laxicon": "https://github.com/JSDesign/laxicon.git"
+    "jquery.stellar": "https://github.com/markdalgleish/stellar.js.git#~0.6.2"
   }
 }
