@@ -3,9 +3,16 @@
     @media #{$large-up}{
         &:hover {
             &::before, &::after {
-                @include opacity(1);
+                background-color: #f0faff;
             }
-            .buton {
+
+            &.left-align, &.right-align, &.center {
+                &::before, &::after {
+                    border-color: #7fbcd7;
+                }
+            }
+
+            .btn {
                 border-color: transparent;
                 background-color: #7fbcd7;
                 color: #ffffff;
@@ -24,9 +31,8 @@
         position: absolute;
         z-index: -1;
         display: none;
-        background-color: #f0faff;
-        @include opacity(0);
-        @include transition-property(opacity);
+        background-color: #fff;
+        @include transition-property(background-color, border);
         @include transition-duration(300ms);
         @media #{$large-up}{
             display: block;
@@ -36,7 +42,7 @@
     &::before {
         top: -20px;
         left: -20px;
-        width: 120%;
+        width: calc(100% + 45px);
         height: 120%;
     }
 
@@ -48,39 +54,39 @@
 
     &.left-align {
         &::before {
-            border-right: 2px solid #7fbcd7;
+            border-right: 2px solid transparent;
         }
         &::after {
             top: 65px;
-            right: -14.9%;
-            border-right: 2px solid #7fbcd7;
-            border-bottom: 2px solid #7fbcd7;
+            right: -32px;
+            border-right: 2px solid transparent;
+            border-bottom: 2px solid transparent;
         }
     }
 
     &.right-align {
         &::before {
-            border-left: 2px solid #7fbcd7;
+            border-left: 2px solid transparent;
         }
 
         &::after {
             top: 65px;
             left: -27px;
-            border-top: 2px solid #7fbcd7;
-            border-left: 2px solid #7fbcd7;
+            border-top: 2px solid transparent;
+            border-left: 2px solid transparent;
         }
     }
 
     &.center {
         &::before {
-            border-top: 2px solid #7fbcd7;
+            border-top: 2px solid transparent;
         }
 
         &::after {
             top: -27px;
             left: 50%;
-            border-right: 2px solid #7fbcd7;
-            border-top: 2px solid #7fbcd7;
+            border-right: 2px solid transparent;
+            border-top: 2px solid transparent;
         }
     }
 

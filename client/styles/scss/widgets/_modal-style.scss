@@ -1,4 +1,8 @@
 .modal-style {
+    position: fixed;
+    width: 100%;
+    min-width: 320px;
+    top: 10% !important;
     text-align: center;
     @media #{$small-only}{
         top: 100px;
@@ -6,7 +10,7 @@
         min-height: 196px;
     }
 
-    .buton {
+    .btn {
         margin: 20px auto 0;
         background-color: #5fcaf2;
         color: #ffffff;

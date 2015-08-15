@@ -1,9 +1,9 @@
 header {
     position: relative;
     padding: 175px 0 520px;
-    background-attachment: fixed;
     background-image: url("../../images/backgrounds/header-back.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     @include user-select(none);
@@ -34,7 +34,7 @@ header {
 
         h2 {
             margin: 15px 0 0 0;
-            font-family: "Tunga";
+            font-family: "Roboto", sans-serif;
             font-size: 36px;
             text-transform: uppercase;
             text-align: center;
@@ -53,7 +53,7 @@ header {
 
                 a {
                     display: block;
-                    font-family: "Tunga";
+                    font-family: "Roboto", sans-serif;
                     font-size: 18px;
                     line-height: 47px;
                     text-transform: uppercase;
@@ -63,7 +63,7 @@ header {
             }
         }
     }
-    .buton {
+    .btn {
         &.white {
             margin: 55px auto 0;
             background-color: #5fcaf2;

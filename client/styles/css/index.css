@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500);
-/* line 5, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -5465,15 +5465,11 @@ th.hide-for-touch {
   background-repeat: no-repeat;
 }
 
-@font-face {
-  font-family: "Tunga";
-  src: url('../fonts/../../fonts/tunga/tunga.ttf') format('truetype'), url('../fonts/../../fonts/tunga/tunga.svg') format('svg'), url('../fonts/../../fonts/tunga/tunga.otf') format('opentype'), url('../fonts/../../fonts/tunga/tunga.woff') format('woff');
-}
-/* line 1, ../scss/components/_buton.scss */
-.buton {
+/* line 1, ../scss/components/_btn.scss */
+.btn {
   display: block;
   width: 164px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 36px;
@@ -5493,56 +5489,56 @@ th.hide-for-touch {
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 14, ../scss/components/_buton.scss */
-.buton:focus {
+/* line 14, ../scss/components/_btn.scss */
+.btn:focus {
   outline: none;
 }
-/* line 18, ../scss/components/_buton.scss */
-.buton.black {
+/* line 18, ../scss/components/_btn.scss */
+.btn.black {
   border: 1px solid #000000;
   font-weight: 400;
   color: #000000;
 }
-/* line 23, ../scss/components/_buton.scss */
-.buton.black:hover {
+/* line 23, ../scss/components/_btn.scss */
+.btn.black:hover {
   border-color: transparent;
   background-color: #7fbcd7;
   color: #ffffff;
 }
-/* line 29, ../scss/components/_buton.scss */
-.buton.black:active {
+/* line 29, ../scss/components/_btn.scss */
+.btn.black:active {
   border-color: transparent;
   background-color: #538da7;
   color: #ffffff;
 }
-/* line 36, ../scss/components/_buton.scss */
-.buton.white {
+/* line 36, ../scss/components/_btn.scss */
+.btn.white {
   border: 2px solid #ffffff;
   color: #ffffff;
 }
-/* line 40, ../scss/components/_buton.scss */
-.buton.white:hover {
+/* line 40, ../scss/components/_btn.scss */
+.btn.white:hover {
   border: 1px solid #ffffff;
   background-color: #7bc4e6;
   line-height: 38px;
 }
-/* line 46, ../scss/components/_buton.scss */
-.buton.white:active {
+/* line 46, ../scss/components/_btn.scss */
+.btn.white:active {
   border: 2px solid #3484a9;
   background-color: #378fb8;
   line-height: 36px;
 }
-/* line 53, ../scss/components/_buton.scss */
-.buton.orange {
+/* line 53, ../scss/components/_btn.scss */
+.btn.orange {
   background-color: #de6c40;
   color: #ffffff;
 }
-/* line 57, ../scss/components/_buton.scss */
-.buton.orange:hover {
+/* line 57, ../scss/components/_btn.scss */
+.btn.orange:hover {
   background-color: #f17645;
 }
-/* line 61, ../scss/components/_buton.scss */
-.buton.orange:active {
+/* line 61, ../scss/components/_btn.scss */
+.btn.orange:active {
   background-color: #d76437;
 }
 
@@ -5564,9 +5560,9 @@ th.hide-for-touch {
 header {
   position: relative;
   padding: 175px 0 520px;
-  background-attachment: fixed;
   background-image: url("../../images/backgrounds/header-back.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   -webkit-user-select: none;
@@ -5618,7 +5614,7 @@ header .logo img {
 /* line 35, ../scss/widgets/_header.scss */
 header .logo h2 {
   margin: 15px 0 0 0;
-  font-family: "Tunga";
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   text-transform: uppercase;
   text-align: center;
@@ -5638,7 +5634,7 @@ header nav ul li {
 /* line 54, ../scss/widgets/_header.scss */
 header nav ul li a {
   display: block;
-  font-family: "Tunga";
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 47px;
   text-transform: uppercase;
@@ -5646,17 +5642,17 @@ header nav ul li a {
   color: #4a7999;
 }
 /* line 67, ../scss/widgets/_header.scss */
-header .buton.white {
+header .btn.white {
   margin: 55px auto 0;
   background-color: #5fcaf2;
 }
 /* line 71, ../scss/widgets/_header.scss */
-header .buton.white:hover {
+header .btn.white:hover {
   background-color: #ffffff;
   color: #5fcaf2;
 }
 /* line 76, ../scss/widgets/_header.scss */
-header .buton.white:active {
+header .btn.white:active {
   border: 2px solid #43a9cf;
   background-color: #43a9cf;
   color: #ffffff;
@@ -5665,7 +5661,9 @@ header .buton.white:active {
 /* line 1, ../scss/widgets/_scroll-open.scss */
 .scroll-open {
   z-index: 10;
+  height: 80px;
   background-color: #ffffff;
+  line-height: 80px;
   -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
@@ -5675,40 +5673,48 @@ header .buton.white:active {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 7, ../scss/widgets/_scroll-open.scss */
-.scroll-open nav {
-  padding-top: 22px;
+@media only screen and (max-width: 40em) {
+  /* line 1, ../scss/widgets/_scroll-open.scss */
+  .scroll-open {
+    display: none;
+  }
 }
-/* line 10, ../scss/widgets/_scroll-open.scss */
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  /* line 1, ../scss/widgets/_scroll-open.scss */
+  .scroll-open {
+    display: none;
+  }
+}
+/* line 16, ../scss/widgets/_scroll-open.scss */
 .scroll-open nav a {
-  display: block;
+  display: inline-block;
 }
-/* line 13, ../scss/widgets/_scroll-open.scss */
-.scroll-open nav a.buton {
+/* line 19, ../scss/widgets/_scroll-open.scss */
+.scroll-open nav a.btn {
   float: right;
 }
-/* line 18, ../scss/widgets/_scroll-open.scss */
+/* line 24, ../scss/widgets/_scroll-open.scss */
 .scroll-open nav img {
-  height: 38px;
-  vertical-align: top;
-}
-/* line 23, ../scss/widgets/_scroll-open.scss */
-.scroll-open nav dl {
-  margin: 0;
-  padding-top: 14px;
-  font-size: 0;
+  width: 168px;
 }
 /* line 28, ../scss/widgets/_scroll-open.scss */
-.scroll-open nav dl dd {
+.scroll-open nav ul {
+  margin: 0;
+  font-size: 0;
+}
+/* line 32, ../scss/widgets/_scroll-open.scss */
+.scroll-open nav ul li {
   position: relative;
   display: inline-block;
-  width: 20%;
+  padding: 36px 28px 0;
+  text-align: center;
 }
-/* line 33, ../scss/widgets/_scroll-open.scss */
-.scroll-open nav dl dd::before {
+/* line 38, ../scss/widgets/_scroll-open.scss */
+.scroll-open nav ul li::before {
   content: "";
   position: absolute;
-  top: 39px;
+  left: 0;
+  bottom: -22px;
   width: 100%;
   border-bottom: 2px solid #7fbcd7;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -5722,25 +5728,28 @@ header .buton.white:active {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 45, ../scss/widgets/_scroll-open.scss */
-.scroll-open nav dl dd:hover::before, .scroll-open nav dl dd.active::before {
+/* line 51, ../scss/widgets/_scroll-open.scss */
+.scroll-open nav ul li:hover::before, .scroll-open nav ul li.active::before {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 50, ../scss/widgets/_scroll-open.scss */
-.scroll-open nav dl dd:first-child {
+/* line 56, ../scss/widgets/_scroll-open.scss */
+.scroll-open nav ul li:first-child {
   margin-left: 0;
 }
-/* line 54, ../scss/widgets/_scroll-open.scss */
-.scroll-open nav dl dd a {
+/* line 60, ../scss/widgets/_scroll-open.scss */
+.scroll-open nav ul li a {
   display: block;
   padding: 0;
-  font-family: "Tunga";
-  font-size: 18px;
-  line-height: 29px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+}
+/* line 73, ../scss/widgets/_scroll-open.scss */
+.scroll-open .contact-btn-wrap {
+  padding-top: 27px;
 }
 
 /* line 1, ../scss/widgets/_service-item.scss */
@@ -5750,54 +5759,55 @@ header .buton.white:active {
 @media only screen and (min-width: 64.0625em) {
   /* line 5, ../scss/widgets/_service-item.scss */
   .figure-wrapper:hover::before, .figure-wrapper:hover::after {
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
+    background-color: #f0faff;
   }
-  /* line 8, ../scss/widgets/_service-item.scss */
-  .figure-wrapper:hover .buton {
+  /* line 10, ../scss/widgets/_service-item.scss */
+  .figure-wrapper:hover.left-align::before, .figure-wrapper:hover.left-align::after, .figure-wrapper:hover.right-align::before, .figure-wrapper:hover.right-align::after, .figure-wrapper:hover.center::before, .figure-wrapper:hover.center::after {
+    border-color: #7fbcd7;
+  }
+  /* line 15, ../scss/widgets/_service-item.scss */
+  .figure-wrapper:hover .btn {
     border-color: transparent;
     background-color: #7fbcd7;
     color: #ffffff;
   }
-  /* line 13, ../scss/widgets/_service-item.scss */
-  .figure-wrapper:hover .buton:active {
+  /* line 20, ../scss/widgets/_service-item.scss */
+  .figure-wrapper:hover .btn:active {
     border-color: transparent;
     background-color: #538da7;
     color: #ffffff;
   }
 }
-/* line 22, ../scss/widgets/_service-item.scss */
+/* line 29, ../scss/widgets/_service-item.scss */
 .figure-wrapper::before, .figure-wrapper::after {
   content: "";
   position: absolute;
   z-index: -1;
   display: none;
-  background-color: #f0faff;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
+  background-color: #fff;
+  -moz-transition-property: background-color, border;
+  -o-transition-property: background-color, border;
+  -webkit-transition-property: background-color, border;
+  transition-property: background-color, border;
   -moz-transition-duration: 300ms;
   -o-transition-duration: 300ms;
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 22, ../scss/widgets/_service-item.scss */
+  /* line 29, ../scss/widgets/_service-item.scss */
   .figure-wrapper::before, .figure-wrapper::after {
     display: block;
   }
 }
-/* line 36, ../scss/widgets/_service-item.scss */
+/* line 42, ../scss/widgets/_service-item.scss */
 .figure-wrapper::before {
   top: -20px;
   left: -20px;
-  width: 120%;
+  width: calc(100% + 45px);
   height: 120%;
 }
-/* line 43, ../scss/widgets/_service-item.scss */
+/* line 49, ../scss/widgets/_service-item.scss */
 .figure-wrapper::after {
   width: 15px;
   height: 15px;
@@ -5806,40 +5816,40 @@ header .buton.white:active {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 50, ../scss/widgets/_service-item.scss */
+/* line 56, ../scss/widgets/_service-item.scss */
 .figure-wrapper.left-align::before {
-  border-right: 2px solid #7fbcd7;
+  border-right: 2px solid transparent;
 }
-/* line 53, ../scss/widgets/_service-item.scss */
+/* line 59, ../scss/widgets/_service-item.scss */
 .figure-wrapper.left-align::after {
   top: 65px;
-  right: -14.9%;
-  border-right: 2px solid #7fbcd7;
-  border-bottom: 2px solid #7fbcd7;
+  right: -32px;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid transparent;
 }
-/* line 62, ../scss/widgets/_service-item.scss */
+/* line 68, ../scss/widgets/_service-item.scss */
 .figure-wrapper.right-align::before {
-  border-left: 2px solid #7fbcd7;
+  border-left: 2px solid transparent;
 }
-/* line 66, ../scss/widgets/_service-item.scss */
+/* line 72, ../scss/widgets/_service-item.scss */
 .figure-wrapper.right-align::after {
   top: 65px;
   left: -27px;
-  border-top: 2px solid #7fbcd7;
-  border-left: 2px solid #7fbcd7;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
 }
-/* line 75, ../scss/widgets/_service-item.scss */
+/* line 81, ../scss/widgets/_service-item.scss */
 .figure-wrapper.center::before {
-  border-top: 2px solid #7fbcd7;
+  border-top: 2px solid transparent;
 }
-/* line 79, ../scss/widgets/_service-item.scss */
+/* line 85, ../scss/widgets/_service-item.scss */
 .figure-wrapper.center::after {
   top: -27px;
   left: 50%;
-  border-right: 2px solid #7fbcd7;
-  border-top: 2px solid #7fbcd7;
+  border-right: 2px solid transparent;
+  border-top: 2px solid transparent;
 }
-/* line 89, ../scss/widgets/_service-item.scss */
+/* line 95, ../scss/widgets/_service-item.scss */
 .figure-wrapper figure figcaption h3 {
   font-weight: 600;
   font-size: 22px;
@@ -5847,7 +5857,7 @@ header .buton.white:active {
   text-transform: capitalize;
   color: #4095b4;
 }
-/* line 97, ../scss/widgets/_service-item.scss */
+/* line 103, ../scss/widgets/_service-item.scss */
 .figure-wrapper figure figcaption p {
   line-height: 25px;
   text-align: left;
@@ -5855,13 +5865,14 @@ header .buton.white:active {
 
 /* line 1, ../scss/widgets/_contact-box.scss */
 .contact-box {
-  width: 271px;
+  font-size: 0;
+  text-align: center;
 }
-/* line 6, ../scss/widgets/_contact-box.scss */
+/* line 7, ../scss/widgets/_contact-box.scss */
 .contact-box li a {
   position: relative;
   display: inline-block;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 14px;
   color: #ffffff;
@@ -5874,11 +5885,11 @@ header .buton.white:active {
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 16, ../scss/widgets/_contact-box.scss */
+/* line 17, ../scss/widgets/_contact-box.scss */
 .contact-box li a:hover {
   color: #9fe1ff;
 }
-/* line 20, ../scss/widgets/_contact-box.scss */
+/* line 21, ../scss/widgets/_contact-box.scss */
 .contact-box li a::before {
   content: "";
   position: absolute;
@@ -5894,19 +5905,19 @@ header .buton.white:active {
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* line 33, ../scss/widgets/_contact-box.scss */
+/* line 34, ../scss/widgets/_contact-box.scss */
 .contact-box li:nth-child(1) a::before {
   background-position: 0 0;
 }
-/* line 37, ../scss/widgets/_contact-box.scss */
+/* line 38, ../scss/widgets/_contact-box.scss */
 .contact-box li:nth-child(1) a:hover::before {
   background-position: 0 0;
 }
-/* line 45, ../scss/widgets/_contact-box.scss */
+/* line 46, ../scss/widgets/_contact-box.scss */
 .contact-box li:nth-child(2) a::before {
   background-position: 0 -22px;
 }
-/* line 49, ../scss/widgets/_contact-box.scss */
+/* line 50, ../scss/widgets/_contact-box.scss */
 .contact-box li:nth-child(2) a:hover::before {
   background-position: 0 -22px;
 }
@@ -5932,6 +5943,10 @@ footer p {
 
 /* line 1, ../scss/widgets/_modal-style.scss */
 .modal-style {
+  position: fixed;
+  width: 100%;
+  min-width: 320px;
+  top: 10% !important;
   text-align: center;
 }
 @media only screen and (max-width: 40em) {
@@ -5942,14 +5957,14 @@ footer p {
     min-height: 196px;
   }
 }
-/* line 9, ../scss/widgets/_modal-style.scss */
-.modal-style .buton {
+/* line 13, ../scss/widgets/_modal-style.scss */
+.modal-style .btn {
   margin: 20px auto 0;
   background-color: #5fcaf2;
   color: #ffffff;
 }
-/* line 14, ../scss/widgets/_modal-style.scss */
-.modal-style .buton:hover {
+/* line 18, ../scss/widgets/_modal-style.scss */
+.modal-style .btn:hover {
   background-color: #57B6DA;
 }
 
@@ -5977,7 +5992,7 @@ footer p {
 /* line 15, ../scss/layouts/home/_services.scss */
 .home .services h2 {
   margin: 0;
-  font-family: "Tunga";
+  font-family: "Roboto", sans-serif;
   font-size: 30px;
   text-transform: uppercase;
   -webkit-user-select: none;
@@ -5989,7 +6004,7 @@ footer p {
 @media only screen and (min-width: 64.0625em) {
   /* line 15, ../scss/layouts/home/_services.scss */
   .home .services h2 {
-    font-size: 48px;
+    font-size: 36px;
   }
 }
 @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
@@ -6076,13 +6091,13 @@ footer p {
   margin-top: 20px;
 }
 /* line 94, ../scss/layouts/home/_services.scss */
-.home .services .service-items .figure-wrapper figure figcaption .buton {
+.home .services .service-items .figure-wrapper figure figcaption .btn {
   float: right;
   margin-top: 15px;
 }
 @media only screen and (max-width: 40em) {
   /* line 94, ../scss/layouts/home/_services.scss */
-  .home .services .service-items .figure-wrapper figure figcaption .buton {
+  .home .services .service-items .figure-wrapper figure figcaption .btn {
     float: none;
     margin: 15px auto 0;
   }
@@ -6091,9 +6106,9 @@ footer p {
 .home .work {
   padding: 190px 0 110px;
   background-image: url("../../images/backgrounds/work-back.jpg");
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
 }
 @media only screen and (max-width: 40em) {
@@ -6167,11 +6182,19 @@ footer p {
 .home .work .solutions .slide-examples li {
   margin: 15px 0 0;
 }
-/* line 55, ../scss/layouts/home/_work.scss */
+/* line 56, ../scss/layouts/home/_work.scss */
+.home .work .solutions .slide-examples li:first-child a {
+  float: right;
+}
+/* line 62, ../scss/layouts/home/_work.scss */
+.home .work .solutions .slide-examples li:last-child a {
+  float: left;
+}
+/* line 67, ../scss/layouts/home/_work.scss */
 .home .work .solutions .slide-examples li a {
   display: block;
 }
-/* line 58, ../scss/layouts/home/_work.scss */
+/* line 70, ../scss/layouts/home/_work.scss */
 .home .work .solutions .slide-examples li a img {
   width: 146px;
   border: 2px solid transparent;
@@ -6190,22 +6213,23 @@ footer p {
   transition-duration: 200ms;
 }
 @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
-  /* line 58, ../scss/layouts/home/_work.scss */
+  /* line 70, ../scss/layouts/home/_work.scss */
   .home .work .solutions .slide-examples li a img {
     width: 90%;
+    max-width: 146px;
   }
 }
-/* line 67, ../scss/layouts/home/_work.scss */
+/* line 80, ../scss/layouts/home/_work.scss */
 .home .work .solutions .slide-examples li a img:hover {
   border-color: #ffffff;
 }
-/* line 75, ../scss/layouts/home/_work.scss */
-.home .work .solutions .buton {
+/* line 88, ../scss/layouts/home/_work.scss */
+.home .work .solutions .btn {
   margin: 50px auto 0;
 }
 @media only screen and (max-width: 40em) {
-  /* line 75, ../scss/layouts/home/_work.scss */
-  .home .work .solutions .buton {
+  /* line 88, ../scss/layouts/home/_work.scss */
+  .home .work .solutions .btn {
     margin: 20px auto 0;
   }
 }
@@ -6227,9 +6251,9 @@ footer p {
   }
 }
 /* line 11, ../scss/layouts/home/_about.scss */
-.home .about h3 {
+.home .about h2 {
   margin: 0;
-  font-family: "Tunga";
+  font-family: "Roboto", sans-serif;
   font-size: 30px;
   line-height: 40px;
   text-transform: uppercase;
@@ -6241,8 +6265,8 @@ footer p {
 }
 @media only screen and (min-width: 64.0625em) {
   /* line 11, ../scss/layouts/home/_about.scss */
-  .home .about h3 {
-    font-size: 48px;
+  .home .about h2 {
+    font-size: 36px;
   }
 }
 /* line 23, ../scss/layouts/home/_about.scss */
@@ -6276,9 +6300,9 @@ footer p {
 .home .contact {
   padding: 150px 0 360px;
   background-image: url("../../images/backgrounds/contact-back.jpg");
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
 }
 @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
@@ -6294,9 +6318,9 @@ footer p {
   }
 }
 /* line 15, ../scss/layouts/home/_contact.scss */
-.home .contact h3 {
+.home .contact h2 {
   margin: 0;
-  font-family: "Tunga";
+  font-family: "Roboto", sans-serif;
   font-size: 30px;
   line-height: 40px;
   text-transform: uppercase;
@@ -6310,8 +6334,8 @@ footer p {
 }
 @media only screen and (min-width: 64.0625em) {
   /* line 15, ../scss/layouts/home/_contact.scss */
-  .home .contact h3 {
-    font-size: 48px;
+  .home .contact h2 {
+    font-size: 36px;
   }
 }
 /* line 29, ../scss/layouts/home/_contact.scss */
@@ -6325,12 +6349,12 @@ footer p {
 }
 /* line 38, ../scss/layouts/home/_contact.scss */
 .home .contact .contact-box {
-  width: 271px;
-  margin: 35px auto 0;
+  margin-top: 35px;
+  text-align: center;
 }
 /* line 42, ../scss/layouts/home/_contact.scss */
 .home .contact .contact-box li {
-  float: left;
+  display: inline-block;
   margin-left: 35px;
 }
 /* line 46, ../scss/layouts/home/_contact.scss */
@@ -6386,7 +6410,7 @@ footer p {
 /* line 91, ../scss/layouts/home/_contact.scss */
 .home .contact form label {
   margin-top: 5px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -6399,14 +6423,14 @@ footer p {
   text-transform: uppercase;
 }
 /* line 102, ../scss/layouts/home/_contact.scss */
-.home .contact form .buton {
+.home .contact form .btn {
   float: right;
   margin: 40px 0 0 0;
   padding: 0;
 }
 @media only screen and (max-width: 40em) {
   /* line 102, ../scss/layouts/home/_contact.scss */
-  .home .contact form .buton {
+  .home .contact form .btn {
     margin-top: 30px;
   }
 }

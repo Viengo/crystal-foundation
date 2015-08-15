@@ -1,9 +1,9 @@
 .contact {
     padding: 150px 0 360px;
     background-image: url("../../images/backgrounds/contact-back.jpg");
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     @media #{$medium-only}{
         padding: 50px 0 210px;
@@ -12,9 +12,9 @@
         padding: 45px 0 160px;
     }
 
-    h3 {
+    h2 {
         margin: 0;
-        font-family: "Tunga";
+        font-family: "Roboto", sans-serif;
         font-size: 30px;
         line-height: 40px;
         text-transform: uppercase;
@@ -22,7 +22,7 @@
         color: #ffffff;
         @include user-select(none);
         @media #{$large-up}{
-            font-size: 48px;
+            font-size: 36px;
         }
     }
 
@@ -36,11 +36,11 @@
     }
 
     .contact-box {
-        width: 271px;
-        margin: 35px auto 0;
+        margin-top: 35px;
+        text-align: center;
 
         li {
-            float: left;
+            display: inline-block;
             margin-left: 35px;
 
             &:nth-child(2) {
@@ -90,7 +90,7 @@
 
         label {
             margin-top: 5px;
-            font-family: "Roboto";
+            font-family: "Roboto", sans-serif;
             text-transform: uppercase;
             @include user-select(none);
         }
@@ -99,7 +99,7 @@
             text-transform: uppercase;
         }
 
-        .buton {
+        .btn {
             float: right;
             margin: 40px 0 0 0;
             padding: 0;

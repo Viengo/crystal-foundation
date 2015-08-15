@@ -1,12 +1,13 @@
 .contact-box {
-    width: 271px;
+    font-size: 0;
+    text-align: center;
 
     li {
 
         a {
             position: relative;
             display: inline-block;
-            font-family: "Roboto";
+            font-family: "Roboto", sans-serif;
             font-weight: 300;
             font-size: 14px;
             color: #ffffff;

@@ -8,15 +8,15 @@
         padding: 45px 15px 60px;
     }
 
-    h3 {
+    h2 {
         margin: 0;
-        font-family: "Tunga";
+        font-family: "Roboto", sans-serif;
         font-size: 30px;
         line-height: 40px;
         text-transform: uppercase;
         @include user-select(none);
         @media #{$large-up}{
-            font-size: 48px;
+            font-size: 36px;
         }
     }
 

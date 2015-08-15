@@ -1,7 +1,7 @@
-<section class="contact" id="contact" data-magellan-destination="contact" data-stellar-background-ratio="0.5">
-    <h3>contact us</h3>
+<section class="contact" id="contact" data-magellan-destination="contact" data-type="parallax" data-speed="10">
+    <h2>contact us</h2>
     <ul class="contact-box clearfix">
-        <li><a href="mailto:uicrystal@ui.com?subject=Contact">uicrystal@ui.com</a></li>
+        <li><a href="mailto:info@uicrystal.com?subject=Contact">info@uicrystal.com</a></li>
         <li><a href="skype:uicrustal">uicrystal</a></li>
     </ul>
     <div class="row">
@@ -13,26 +13,26 @@
     </div>
 
     <form data-abide="ajax" action="/" method="post" id="feedback">
-        <textarea placeholder="Please tell us about your project" required></textarea>
+        <textarea placeholder="Please tell us about your project" name="contactUs[message]" required></textarea>
         <small class="error">mistake: please check your information.</small>
         <div class="row collapse">
             <div class="small-12 medium-12 large-3 columns">
-                <input type="text"/>
+                <input type="text" name="contactUs[name]"/>
                 <p>your name</p>
             </div>
             <div class="small-12 medium-12 large-3 columns">
-                <input type="email" required/>
+                <input type="email" name="contactUs[email]" required/>
 
                 <label>e-mail*</label>
                 <small class="error">mistake: please check your information.</small>
             </div>
             <div class="small-12 medium-12 large-3 columns">
-                <input type="text"/>
+                <input type="text" name="contactUs[skype]"/>
 
                 <p>skype</p>
             </div>
             <div class="small-12 medium-3 large-3 columns clearfix">
-                <button class="buton orange">get in touch</button>
+                <button class="btn orange">get in touch</button>
             </div>
         </div>
     </form>

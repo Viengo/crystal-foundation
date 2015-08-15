@@ -13,6 +13,38 @@ $(document).on('ready', function () {
     });
 
 
+    var CJ = window.CJ || {};
+
+    CJ.Parallax = function () {
+        //if (device.desktop()) {
+            this.parallaxIt();
+        //};
+    }
+
+    CJ.Parallax.prototype = {
+        parallaxIt: function() {
+            var screenHeight = $(window).height();
+
+            $('section[data-type="parallax"]').each(function(){
+                var parallaxArea = $(this),
+                    speed = parallaxArea.data('speed');
+
+                $(window).scroll(function() {
+                    var areaTopPos = parallaxArea.offset().top,
+                        visible = screenHeight + $(window).scrollTop() - areaTopPos >= 0;
+
+                    if (visible) {
+                        var yPos = -($(window).scrollTop() / speed - areaTopPos / speed),
+                            bgValue = 'center '+ yPos + 'px';
+
+                        parallaxArea.css('background-position', bgValue);
+                    }
+                });
+            });
+        }
+    };
+    new CJ.Parallax();
+
     // Slow scroll to anchor
     smoothScroll.init({
         offset: 60
@@ -24,31 +56,23 @@ $(document).on('ready', function () {
         })
     });
 
-    // Parallax scroll effect settings
-
-    $.stellar({
-        verticalScrolling: true,
-        horizontalScrolling: false,
-        responsive: false
-    });
 
     // Clearing open
 
-    $('#graphic .buton').on('click', function (e) {
+    $('#graphic .btn').on('click', function (e) {
         e.preventDefault();
         $('#graphic [data-clearing] li img').first().trigger('click');
     });
-    $('#web .buton').on('click', function (e) {
+    $('#web .btn').on('click', function (e) {
         e.preventDefault();
         $('#web [data-clearing] li img').first().trigger('click');
     });
 
   //Modal
 
-$('.modal-style a').on('click', function (e) {
-    e.preventDefault();
-    $('.modal-style').foundation('reveal', 'close');
-});
+    $('.close-modal').on('click', function () {
+        $(this).foundation('reveal', 'close');
+    });
 
     $('#feedback').on('valid.fndtn.abide', function (e) {
         var form = $(e.target),
@@ -59,7 +83,7 @@ $('.modal-style a').on('click', function (e) {
             type: "POST",
             data: formData,
             success: function (responce) {
-                responce = JSON.parse(responce);
+                responce = responce != "" ? $.parseJSON(responce) : {};
 
                 if (responce.status == 'ok') {
                     form.trigger('reset');
@@ -68,7 +92,6 @@ $('.modal-style a').on('click', function (e) {
                     // Your message sent. We contact with you soon.
                 } else {
                     $('#fail').foundation('reveal', 'open');
-
                     // modal false
                     // Sorry something wrong! Please contact us via email.
                 }
