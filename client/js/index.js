@@ -29,7 +29,7 @@ $(document).on('ready', function () {
     $.stellar({
         verticalScrolling: true,
         horizontalScrolling: false,
-        responsive: true
+        responsive: false
     });
 
     // Clearing open
@@ -43,6 +43,12 @@ $(document).on('ready', function () {
         $('#web [data-clearing] li img').first().trigger('click');
     });
 
+  //Modal
+
+$('.modal-style a').on('click', function (e) {
+    e.preventDefault();
+    $('.modal-style').foundation('reveal', 'close');
+});
 
     $('#feedback').on('valid.fndtn.abide', function (e) {
         var form = $(e.target),
