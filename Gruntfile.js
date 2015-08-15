@@ -19,6 +19,7 @@ module.exports = function (grunt) {
                 'bower_components/foundation/js/foundation/foundation.topbar.js',
                 'bower_components/foundation/js/foundation/foundation.reveal.js',
                 'bower_components/foundation/js/foundation/foundation.abide.js',
+                'bower_components/foundation/js/foundation/vendor/placeholder.js',
                 'bower_components/smooth-scroll/dist/js/smooth-scroll.js',
                 'client/js/index.js'
                 ],
