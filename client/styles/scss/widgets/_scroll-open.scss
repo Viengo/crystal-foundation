@@ -1,39 +1,45 @@
 .scroll-open {
     z-index: 10;
+    height: 80px;
     background-color: #ffffff;
+    line-height: 80px;
     @include box-shadow(0px 3px 3px rgba(#000, 0.2));
     @include user-select(none);
+    @media #{$small-only} {
+        display: none;
+    }
+    @media #{$medium-only} {
+        display: none;
+    }
 
     nav {
-        padding-top: 22px;
-
         a {
-            display: block;
+            display: inline-block;
 
-            &.buton {
+            &.btn {
                 float: right;
             }
         }
 
         img {
-            height: 38px;
-            vertical-align: top;
+            width: 168px;
         }
 
-        dl {
+        ul {
             margin: 0;
-            padding-top: 14px;
             font-size: 0;
 
-            dd {
+            li {
                 position: relative;
                 display: inline-block;
-                width: 20%;
+                padding: 36px 28px 0;
+                text-align: center;
 
                 &::before {
                     content: "";
                     position: absolute;
-                    top: 39px;
+                    left: 0;
+                    bottom: -22px;
                     width: 100%;
                     border-bottom: 2px solid #7fbcd7;
                     @include opacity(0);
@@ -54,14 +60,17 @@
                 a {
                     display: block;
                     padding: 0;
-                    font-family: "Tunga";
-                    font-size: 18px;
-                    line-height: 29px;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 14px;
                     text-transform: uppercase;
                     text-align: center;
                     color: #000000;
                 }
             }
         }
+    }
+
+    .contact-btn-wrap {
+        padding-top: 27px;
     }
 }

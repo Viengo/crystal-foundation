@@ -15,7 +15,6 @@ module.exports = function (grunt) {
                 'bower_components/modernizr/modernizr.js',
                 'bower_components/foundation/js/foundation.min.js',
                 'bower_components/smooth-scroll/dist/js/smooth-scroll.js',
-                'bower_components/jquery.stellar/jquery.stellar.js',
                 'client/js/index.js'
                 ],
                 dest: 'build/js/concat/index.js'
@@ -38,17 +37,17 @@ module.exports = function (grunt) {
         watch: {
             html: {
                 files: [
-                'tpl/*.html'
+                'tpl/**/*.html'
                 ],
                 tasks: 'includereplace'
             },
             css: {
-                files: 'client/styles/scss/*.scss',
+                files: 'client/styles/scss/**/*.scss',
                 //files: 'client/styles/scss*//**//*.scss',
                 tasks: 'compass:compile'
             },
             js: {
-                files: 'client/js/*.js',
+                files: 'client/js/**/*.js',
                 tasks: ['concat']
             }
         }

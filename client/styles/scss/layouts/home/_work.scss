@@ -1,9 +1,9 @@
 .work {
     padding: 190px 0 110px;
     background-image: url("../../images/backgrounds/work-back.jpg");
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     @media #{$small-only} {
         padding: 0 0 60px;
@@ -50,7 +50,19 @@
             text-align: center;
 
             li {
-               margin: 15px 0 0;
+                margin: 15px 0 0;
+
+                &:first-child {
+                    a {
+                        float: right;
+                    }
+                }
+
+                &:last-child {
+                    a {
+                        float: left;
+                    }
+                }
 
                 a {
                     display: block;
@@ -63,6 +75,7 @@
                         @include transition-duration(200ms);
                         @media #{$medium-only} {
                             width: 90%;
+                            max-width: 146px;
                         }
                         &:hover {
                             border-color: #ffffff;
@@ -72,7 +85,7 @@
             }
         }
 
-        .buton {
+        .btn {
             margin: 50px auto 0;
             @media #{$small-only} {
                 margin: 20px auto 0;
