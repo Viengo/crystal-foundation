@@ -12,30 +12,40 @@ $(document).on('ready', function () {
         }
     });
 
+    $(document.body).on("opened.fndtn.clearing", function(event) {
+        $('.link-view').on('click', function (e) {
+            e.preventDefault();
+            window.open(e['currentTarget']['href']);
+        });
+    });
+
+    $(document.body).on("close.fndtn.clearing", function(event) {
+        $('.link-view').off('click', '**');
+    });
 
     var CJ = window.CJ || {};
 
     CJ.Parallax = function () {
         //if (device.desktop()) {
-            this.parallaxIt();
+        this.parallaxIt();
         //};
-    }
+    };
 
     CJ.Parallax.prototype = {
-        parallaxIt: function() {
+        parallaxIt: function () {
             var screenHeight = $(window).height();
 
-            $('section[data-type="parallax"]').each(function(){
+            $('section[data-type="parallax"]').each(function () {
                 var parallaxArea = $(this),
                     speed = parallaxArea.data('speed');
 
-                $(window).scroll(function() {
+                $(window).scroll(function () {
                     var areaTopPos = parallaxArea.offset().top,
                         visible = screenHeight + $(window).scrollTop() - areaTopPos >= 0;
 
                     if (visible) {
                         var yPos = -($(window).scrollTop() / speed - areaTopPos / speed),
-                            bgValue = 'center '+ yPos + 'px';
+                            bgValue = 'center ' + yPos + 'px';
 
                         parallaxArea.css('background-position', bgValue);
                     }
@@ -50,7 +60,7 @@ $(document).on('ready', function () {
         offset: 60
     });
 
-    $('.nav-list a').on('click', function(){
+    $('.nav-list a').on('click', function () {
         smoothScroll.init({
             offset: 45
         })
@@ -68,7 +78,8 @@ $(document).on('ready', function () {
         $('#web [data-clearing] li img').first().trigger('click');
     });
 
-  //Modal
+
+    //Modal
 
     $('.close-modal').on('click', function () {
         $(this).foundation('reveal', 'close');
