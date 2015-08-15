@@ -14,7 +14,7 @@ module.exports = function (grunt) {
                 'bower_components/jquery/dist/jquery.min.js',
                 'bower_components/modernizr/modernizr.js',
                 'bower_components/foundation/js/foundation/foundation.js',
-                'bower_components/foundation/js/foundation/clearing.js',
+                'bower_components/foundation/js/foundation/foundation.clearing.js',
                 'bower_components/foundation/js/foundation/foundation.magellan.js',
                 'bower_components/foundation/js/foundation/foundation.topbar.js',
                 'bower_components/smooth-scroll/dist/js/smooth-scroll.js',

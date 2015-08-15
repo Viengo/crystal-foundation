@@ -58,7 +58,7 @@
                     }
                 }
 
-                &:last-child {
+                &:nth-child(3) {
                     a {
                         float: left;
                     }
@@ -73,10 +73,7 @@
                         @include user-select(none);
                         @include transition-property(border-color);
                         @include transition-duration(200ms);
-                        @media #{$medium-only} {
-                            width: 90%;
-                            max-width: 146px;
-                        }
+
                         &:hover {
                             border-color: #ffffff;
                         }
