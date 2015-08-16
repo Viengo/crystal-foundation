@@ -26,9 +26,9 @@ $(document).on('ready', function () {
     var CJ = window.CJ || {};
 
     CJ.Parallax = function () {
-        //if (device.desktop()) {
+        if (device.desktop()) {
         this.parallaxIt();
-        //};
+        };
     };
 
     CJ.Parallax.prototype = {

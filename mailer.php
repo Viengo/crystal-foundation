@@ -20,7 +20,7 @@ function sentMail($email, $passForEmail, $mailData)
     // Create a message
     $message = Swift_Message::newInstance('UI Crystal contact us')//theme of mail
     ->setFrom(array($mailData['email'] => $mailData['name']))
-        ->setTo(array($email => 'Info'))
+        ->setTo(array('sokolovskiy.alexandr.dev@gmail.com', 'falc0nline1@gmail.com' => 'Info'))
         ->setBody($message);
 
     $mail = $mailer->send($message);
