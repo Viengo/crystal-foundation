@@ -67,13 +67,13 @@ $input-error-message-top: 10px;
 $input-error-message-font-size: rem-calc(14) !default;
 $input-error-message-font-weight: 300;
 $input-error-message-font-style: normal;
-$input-error-message-font-color: #9fe1ff;
+$input-error-message-font-color: #f04124;
 $input-error-message-bg-color: transparent;
 $input-error-message-font-color-alt: $oil !default;
 
 // We use this to style the glowing effect of inputs when focused
 $glowing-effect-fade-time: .45s !default;
-$glowing-effect-color: $input-focus-border-color !default;
+$glowing-effect-color: #9fe1ff;
 
 // We use this to style the transition when inputs are focused and when the glowing effect is disabled.
 $input-transition-fade-time: 0.15s !default;

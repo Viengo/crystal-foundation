@@ -2455,8 +2455,8 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 }
 /* line 185, ../../../bower_components/foundation/scss/foundation/components/_global.scss */
 input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus {
-  border-color: #999999;
-  box-shadow: 0 0 5px #999999;
+  border-color: #9fe1ff;
+  box-shadow: 0 0 5px #9fe1ff;
 }
 /* line 138, ../../../bower_components/foundation/scss/foundation/components/_forms.scss */
 input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus {
@@ -2694,7 +2694,7 @@ fieldset legend {
   margin-top: 10px;
   padding: 0;
   background: transparent;
-  color: #9fe1ff;
+  color: #f04124;
 }
 /* line 556, ../../../bower_components/foundation/scss/foundation/components/_forms.scss */
 [data-abide] span.error, [data-abide] small.error {
@@ -2711,7 +2711,7 @@ span.error, small.error {
   margin-top: 10px;
   padding: 0;
   background: transparent;
-  color: #9fe1ff;
+  color: #f04124;
 }
 
 /* line 564, ../../../bower_components/foundation/scss/foundation/components/_forms.scss */
@@ -2740,7 +2740,7 @@ span.error, small.error {
   margin-top: 10px;
   padding: 0;
   background: transparent;
-  color: #9fe1ff;
+  color: #f04124;
 }
 /* line 585, ../../../bower_components/foundation/scss/foundation/components/_forms.scss */
 .error > label > small {
@@ -3597,7 +3597,7 @@ meta.foundation-mq-topbar {
   font-size: 1.125rem;
   font-weight: normal;
   padding-left: 1.1875rem;
-  padding: 12px 0 12px 1.1875rem;
+  padding: 12px 0 12px 0;
   text-transform: uppercase;
   width: 100%;
 }
@@ -6380,7 +6380,14 @@ footer p {
 .home .contact form textarea:hover {
   border-color: #d0d6d8;
 }
-/* line 71, ../scss/layouts/home/_contact.scss */
+/* line 69, ../scss/layouts/home/_contact.scss */
+.home .contact form textarea[aria-invalid="true"] {
+  border-color: #D56B42;
+  -moz-box-shadow: 0 0 8px #D56B42;
+  -webkit-box-shadow: 0 0 8px #D56B42;
+  box-shadow: 0 0 8px #D56B42;
+}
+/* line 75, ../scss/layouts/home/_contact.scss */
 .home .contact form input {
   width: 225px;
   margin: 17px 0 0;
@@ -6396,17 +6403,21 @@ footer p {
   box-shadow: none;
 }
 @media only screen and (max-width: 40em) {
-  /* line 71, ../scss/layouts/home/_contact.scss */
+  /* line 75, ../scss/layouts/home/_contact.scss */
   .home .contact form input {
     width: 100%;
   }
 }
-/* line 85, ../scss/layouts/home/_contact.scss */
+/* line 90, ../scss/layouts/home/_contact.scss */
+.home .contact form input[aria-invalid="true"] {
+  border-color: #D56B42;
+}
+/* line 94, ../scss/layouts/home/_contact.scss */
 .home .contact form input + p {
   margin-top: 5px;
   text-transform: uppercase;
 }
-/* line 91, ../scss/layouts/home/_contact.scss */
+/* line 100, ../scss/layouts/home/_contact.scss */
 .home .contact form label {
   margin-top: 5px;
   font-family: "Roboto", sans-serif;
@@ -6417,18 +6428,19 @@ footer p {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 98, ../scss/layouts/home/_contact.scss */
+/* line 107, ../scss/layouts/home/_contact.scss */
 .home .contact form small {
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
 }
-/* line 102, ../scss/layouts/home/_contact.scss */
+/* line 112, ../scss/layouts/home/_contact.scss */
 .home .contact form .btn {
   float: right;
   margin: 40px 0 0 0;
   padding: 0;
 }
 @media only screen and (max-width: 40em) {
-  /* line 102, ../scss/layouts/home/_contact.scss */
+  /* line 112, ../scss/layouts/home/_contact.scss */
   .home .contact form .btn {
     margin-top: 30px;
   }
