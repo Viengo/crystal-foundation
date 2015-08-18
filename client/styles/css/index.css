@@ -2318,7 +2318,7 @@ form .row textarea.columns {
 /* line 393, ../../../bower_components/foundation/scss/foundation/components/_forms.scss */
 label {
   color: #ffffff;
-  cursor: pointer;
+  cursor: default;
   display: block;
   font-size: 0.875rem;
   font-weight: 300;
@@ -2690,7 +2690,7 @@ fieldset legend {
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 300;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   margin-top: 10px;
   padding: 0;
   background: transparent;
@@ -2707,7 +2707,7 @@ span.error, small.error {
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 300;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   margin-top: 10px;
   padding: 0;
   background: transparent;
@@ -2736,7 +2736,7 @@ span.error, small.error {
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 300;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   margin-top: 10px;
   padding: 0;
   background: transparent;
@@ -6343,30 +6343,29 @@ footer p {
 }
 /* line 32, ../scss/layouts/home/_contact.scss */
 .home .contact p:first-child {
-  margin: 45px 0 0;
-  padding: 0 15px;
+  padding: 45px 15px 0;
 }
-/* line 38, ../scss/layouts/home/_contact.scss */
+/* line 37, ../scss/layouts/home/_contact.scss */
 .home .contact .contact-box {
   margin-top: 35px;
   text-align: center;
 }
-/* line 42, ../scss/layouts/home/_contact.scss */
+/* line 41, ../scss/layouts/home/_contact.scss */
 .home .contact .contact-box li {
   display: inline-block;
   margin-left: 35px;
 }
-/* line 46, ../scss/layouts/home/_contact.scss */
+/* line 45, ../scss/layouts/home/_contact.scss */
 .home .contact .contact-box li:nth-child(2) {
   margin-left: 75px;
 }
-/* line 52, ../scss/layouts/home/_contact.scss */
+/* line 51, ../scss/layouts/home/_contact.scss */
 .home .contact form {
   max-width: 1170px;
   margin: 30px auto 0;
   padding: 0 15px;
 }
-/* line 57, ../scss/layouts/home/_contact.scss */
+/* line 56, ../scss/layouts/home/_contact.scss */
 .home .contact form textarea {
   width: 100%;
   height: 167px;
@@ -6376,18 +6375,18 @@ footer p {
   border: 1px solid #5f6c72;
   background-color: rgba(255, 255, 255, 0.1);
 }
-/* line 66, ../scss/layouts/home/_contact.scss */
+/* line 65, ../scss/layouts/home/_contact.scss */
 .home .contact form textarea:hover {
   border-color: #d0d6d8;
 }
-/* line 69, ../scss/layouts/home/_contact.scss */
+/* line 68, ../scss/layouts/home/_contact.scss */
 .home .contact form textarea[aria-invalid="true"] {
   border-color: #D56B42;
   -moz-box-shadow: 0 0 8px #D56B42;
   -webkit-box-shadow: 0 0 8px #D56B42;
   box-shadow: 0 0 8px #D56B42;
 }
-/* line 75, ../scss/layouts/home/_contact.scss */
+/* line 74, ../scss/layouts/home/_contact.scss */
 .home .contact form input {
   width: 225px;
   margin: 17px 0 0;
@@ -6403,21 +6402,21 @@ footer p {
   box-shadow: none;
 }
 @media only screen and (max-width: 40em) {
-  /* line 75, ../scss/layouts/home/_contact.scss */
+  /* line 74, ../scss/layouts/home/_contact.scss */
   .home .contact form input {
     width: 100%;
   }
 }
-/* line 90, ../scss/layouts/home/_contact.scss */
+/* line 89, ../scss/layouts/home/_contact.scss */
 .home .contact form input[aria-invalid="true"] {
   border-color: #D56B42;
 }
-/* line 94, ../scss/layouts/home/_contact.scss */
+/* line 93, ../scss/layouts/home/_contact.scss */
 .home .contact form input + p {
   margin-top: 5px;
   text-transform: uppercase;
 }
-/* line 100, ../scss/layouts/home/_contact.scss */
+/* line 99, ../scss/layouts/home/_contact.scss */
 .home .contact form label {
   margin-top: 5px;
   font-family: "Roboto", sans-serif;
@@ -6428,19 +6427,19 @@ footer p {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 107, ../scss/layouts/home/_contact.scss */
+/* line 106, ../scss/layouts/home/_contact.scss */
 .home .contact form small {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
 }
-/* line 112, ../scss/layouts/home/_contact.scss */
+/* line 111, ../scss/layouts/home/_contact.scss */
 .home .contact form .btn {
   float: right;
   margin: 40px 0 0 0;
   padding: 0;
 }
 @media only screen and (max-width: 40em) {
-  /* line 112, ../scss/layouts/home/_contact.scss */
+  /* line 111, ../scss/layouts/home/_contact.scss */
   .home .contact form .btn {
     margin-top: 30px;
   }

@@ -14,7 +14,7 @@ $include-html-form-classes: $include-html-classes !default;
 $form-spacing: rem-calc(16) !default;
 
 // We use these to style the labels in different ways
-$form-label-pointer: pointer !default;
+$form-label-pointer: default !default;
 $form-label-font-size: rem-calc(14) !default;
 $form-label-font-weight: 300;
 $form-label-line-height: 1.5 !default;
@@ -315,7 +315,7 @@ $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%) !default;
   font-size: $input-error-message-font-size;
   font-style: $input-error-message-font-style;
   font-weight: $input-error-message-font-weight;
-  margin-bottom: $form-spacing;
+  margin-bottom: 0;
   margin-top: $input-error-message-top;
   padding: $input-error-message-padding;
 
